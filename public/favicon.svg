@@ -1,0 +1,8 @@
+<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Chart line -->
+  <path d="M2 24 L10 18 L12 20 L18 14 L20 16 L28 10" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Fleur-de-lis arrowhead -->
+  <g transform="translate(28,10) scale(0.6) translate(-8,-8)">
+    <path d="M8 0 C6 2,6 4,8 6 C6 6,4 7,3 9 C5 9,6 10,6 12 C4 10,2 10,0 12 C2 12,3 14,3 16 C5 14,7 14,8 16 C9 14,11 14,13 16 C13 14,14 12,16 12 C14 10,12 10,10 12 C10 10,11 9,13 9 C12 7,10 6,8 6 C10 4,10 2,8 0 Z" fill="#D4AF37" transform="rotate(45 8 8)" />
+  </g>
+</svg>
