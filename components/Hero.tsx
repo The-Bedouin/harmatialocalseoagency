@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import CardSwap, { Card } from "./CardSwap";
 import ScrollStack, { ScrollStackItem } from "./ScrollStack";
+import TrueFocus from './TrueFocus';
 
 
 export default function Hero() {
@@ -17,7 +18,7 @@ export default function Hero() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center pt-2 sm:pt-3 lg:pt-4 pb-12 lg:pb-16">
           {/* Left copy */}
-          <div>
+          <div className="ml-4 sm:ml-6 lg:ml-8">
             <div className="inline-flex items-center gap-2 rounded-full border border-black/10 dark:border-white/15 bg-white/80 dark:bg-white/5 px-3 py-1 text-xs shadow-sm backdrop-blur">
               <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
               <span className="uppercase tracking-wide text-neutral-600 dark:text-neutral-300">
@@ -26,7 +27,7 @@ export default function Hero() {
             </div>
 
             <h1 className="open-runde-500 mt-4 text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[0.95] text-neutral-900 dark:text-white">
-              Fuelling
+              Grow
               <span className="align-middle inline-block mx-3 translate-y-1">
                 <span className="finance-logo inline-flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-xl relative overflow-hidden">
                   <svg viewBox="0 0 56 56" width="100%" height="100%" fill="none" aria-hidden="true" className="absolute inset-0">
@@ -49,13 +50,20 @@ export default function Hero() {
                   </span>
                 </span>
               </span>
-              growth
+              your business
               <br />
-              with every click
+              with <TrueFocus 
+                sentence="Local SEO"
+                manualMode={false}
+                blurAmount={5}
+                borderColor="green"
+                animationDuration={2}
+                pauseBetweenAnimations={1}
+              />
             </h1>
 
             <p className="open-runde-400-paragraph mt-4 max-w-xl">
-              From landing pages to automation, we craft lead funnels that grow your business on autopilot.
+              We help local businesses dominate search results and attract more customers with proven SEO strategies tailored for your area.
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row gap-4">
