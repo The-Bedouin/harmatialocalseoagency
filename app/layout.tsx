@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import FooterBlurController from "@/components/FooterBlurController";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,8 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-neutral-900`}>
         {children}
+        {/* Fixed bottom blur that hides when footer is visible */}
+        <FooterBlurController />
       </body>
     </html>
   );

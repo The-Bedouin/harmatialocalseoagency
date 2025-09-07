@@ -29,7 +29,7 @@ export default function Hero() {
             <h1 className="open-runde-500 mt-4 text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[0.95] text-neutral-900 dark:text-white">
               Grow
               <span className="align-middle inline-block mx-3 translate-y-1">
-                <span className="finance-logo inline-flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-xl relative overflow-hidden">
+                <span className="finance-logo inline-flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-xl relative overflow-hidden shadow-[0_8px_25px_rgba(34,197,94,0.4)] shadow-[0_4px_12px_rgba(34,197,94,0.3)] shadow-[0_2px_6px_rgba(34,197,94,0.2)]">
                   <svg viewBox="0 0 56 56" width="100%" height="100%" fill="none" aria-hidden="true" className="absolute inset-0">
                     <path d="M8 40 L20 28 L24 32 L34 22 L38 26 L46 16" stroke="#ffffff" strokeWidth="3.25" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
@@ -63,7 +63,7 @@ export default function Hero() {
             </h1>
 
             <p className="open-runde-400-paragraph mt-4 max-w-xl">
-              We help local businesses dominate search results and attract more customers with proven SEO strategies tailored for your area.
+              We empower local businesses to dominate search results and attract more customers with proven, tailored SEO strategies.
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row gap-4">

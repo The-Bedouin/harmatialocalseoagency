@@ -26,7 +26,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* Force light theme to match Funnelz template */
+/* Force light theme */
 html, body { color-scheme: light; }
 
 body {
@@ -34,6 +34,9 @@ body {
   color: #111827; /* near-neutral black for readability */
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Smooth scrolling for in-page anchors */
+html { scroll-behavior: smooth; }
 
 /* Open Runde - 500 utility */
 .open-runde-500 {
@@ -102,3 +105,90 @@ body {
     perspective: 600px;
   }
 }
+
+/* Testimonials slide animations */
+@keyframes testimonial-slide-in {
+  0% {
+    transform: translateX(120%);
+    opacity: 0.0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes testimonial-slide-out {
+  0% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-120%);
+    opacity: 0.0;
+  }
+}
+
+.testimonial-slide-in {
+  animation: testimonial-slide-in 600ms ease-in-out both;
+}
+
+.testimonial-slide-out {
+  animation: testimonial-slide-out 600ms ease-in-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-slide-in,
+  .testimonial-slide-out {
+    animation-duration: 1ms;
+  }
+}
+
+/* Brand green button utilities */
+.btn-green {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%);
+  box-shadow: 0 12px 28px rgba(46, 125, 50, 0.35), 0 2px 6px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  transition: transform 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
+}
+.btn-green:hover {
+  transform: translateY(-2px);
+}
+.btn-green:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.35), 0 12px 28px rgba(46, 125, 50, 0.35), 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.btn-green::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+.btn-green:hover::after { opacity: 1; }
+
+.btn-green-sm { padding: 0.4rem 0.75rem; font-size: 0.9rem; border-radius: 0.5rem; }
+.btn-green-md { padding: 0.55rem 1rem; font-size: 0.95rem; }
+.btn-green-lg { padding: 0.75rem 1.1rem; font-size: 1rem; }
+
+/* Optional outline for secondary actions */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #ffffff;
+  color: #111827;
+  padding: 0.65rem 1rem;
+}
+.btn-outline:hover { background: #f8fafc; }
