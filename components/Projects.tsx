@@ -9,44 +9,57 @@ type Project = {
   image: string;
   metrics: Metric[];
   href?: string;
+  imageZoom?: number;
+  imagePosition?: string;
+  imageOffsetX?: number;
+  imageOffsetY?: number;
 };
 
 const projects: Project[] = [
   {
     title: "Hydrox",
     subtitle: "52% increase in customers",
-    image: "https://images.unsplash.com/photo-1511910849309-0dffb56d4e43?q=80&w=1400&auto=format&fit=crop",
+    image: "/google-business-profile-report.png",
     metrics: [
       { label: "90% increase in CTR" },
       { label: "78% decline in bounce rate" }
     ],
+    imageZoom: 1.1,
+    imagePosition: "object-bottom"
   },
   {
     title: "Ganache",
     subtitle: "From 100 too 500 sales per month",
-    image: "https://images.unsplash.com/photo-1504113888839-1c8eb50233d3?q=80&w=1400&auto=format&fit=crop",
+    image: "/ahrefs-site-strenght-report.JPG",
     metrics: [
       { label: "84% increase in CTR" },
       { label: "50% decrease in CAC" }
     ],
+    imageZoom: 1.1,
+    imagePosition: "object-top",
+    imageOffsetY: -99
   },
   {
     title: "Glow Terra",
     subtitle: "52% increase in customers",
-    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1400&auto=format&fit=crop",
+    image: "/ccb-web-compettitor-analysis.png",
     metrics: [
       { label: "90% increase in CTR" },
       { label: "78% decline in bounce rate" }
     ],
+    imageZoom: 1.1,
+    imagePosition: "object-left"
   },
   {
     title: "Colish",
     subtitle: "46% increase in online sales",
-    image: "https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?q=80&w=1400&auto=format&fit=crop",
+    image: "/ccb-map-rank.png",
     metrics: [
       { label: "90% increase in CTR" },
       { label: "78% decline in bounce rate" }
     ],
+    imageZoom: 1,
+    imagePosition: "object-center"
   },
 ];
 
@@ -66,14 +79,18 @@ function ProjectCard({ project, tall, aspect }: { project: Project; tall?: boole
         >
           <div
             className={
-              "absolute left-1/2 top-1/2 h-[95%] w-[95%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-2xl border-2 border-white ring-1 ring-black/5 shadow-[0_18px_30px_-12px_rgba(0,0,0,0.35),0_10px_18px_rgba(0,0,0,0.18)] hover:shadow-[0_26px_44px_-14px_rgba(0,0,0,0.4),0_14px_24px_rgba(0,0,0,0.2)] transition-shadow duration-300"
+              "absolute left-1/2 top-1/2 h-[95%] w-[95%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-2xl border-2 border-white ring-1 ring-black/5 bg-neutral-900 shadow-[0_18px_30px_-12px_rgba(0,0,0,0.35),0_10px_18px_rgba(0,0,0,0.18)] hover:shadow-[0_26px_44px_-14px_rgba(0,0,0,0.4),0_14px_24px_rgba(0,0,0,0.2)] transition-shadow duration-300"
             }
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={project.image}
               alt={project.title}
-              className="absolute inset-0 h-full w-full object-cover"
+              className={`absolute inset-0 h-full w-full object-cover ${project.imagePosition || 'object-center'}`}
+              style={{
+                transform: `scale(${project.imageZoom || 1}) translate(${project.imageOffsetX || 0}px, ${project.imageOffsetY || 0}px)`,
+                transformOrigin: 'center'
+              }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-transparent" />
 
@@ -123,9 +140,11 @@ export default function Projects() {
           <div className="md:row-span-2">
             <ProjectCard project={projects[1]} tall />
           </div>
-          <ProjectCard project={projects[2]} />
+          {/* Glow Terra: slightly shorter card to remove letterboxing */}
+          <ProjectCard project={projects[2]} aspect="aspect-[16/7] md:aspect-[16/7]" />
+          {/* Colish: even shorter wide banner ratio to match image */}
           <div className="md:col-span-2 -mt-3 md:-mt-6">
-            <ProjectCard project={projects[3]} aspect="aspect-[16/8.8] md:aspect-[16/8.8]" />
+            <ProjectCard project={projects[3]} aspect="aspect-[16/7] md:aspect-[16/7]" />
           </div>
         </div>
       </div>

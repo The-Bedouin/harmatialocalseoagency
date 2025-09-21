@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-export default function TopNav() {
+export default function BlogHeader() {
   const [isOpen, setIsOpen] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
@@ -249,5 +249,3 @@ export default function TopNav() {
     </header>
   );
 }
-
-

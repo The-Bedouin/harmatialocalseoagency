@@ -136,17 +136,61 @@ export default function Hero() {
               delay={5000}
               pauseOnHover={false}
             >
-              <Card>
-                <h3>Card 1</h3>
-                <p>technical seo</p>
+              <Card className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+                <div className="relative h-full">
+                  <img 
+                    src="/gbp-map-pack.png" 
+                    alt="Google Business Profile map pack results"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <h3 className="text-lg font-bold mb-1">Local Search Domination</h3>
+                    <p className="text-sm opacity-90">Rank #1 for local searches</p>
+                  </div>
+                </div>
               </Card>
-              <Card>
-                <h3>Card 2</h3>
-                <p>gmb</p>
+              <Card className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+                <div className="relative h-full">
+                  <img 
+                    src="/ccb-targeted-web-traffic.png" 
+                    alt="Targeted web traffic analytics dashboard"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <h3 className="text-lg font-bold mb-1">Traffic Analytics</h3>
+                    <p className="text-sm opacity-90">13.9K Monthly Visits</p>
+                  </div>
+                </div>
               </Card>
-              <Card>
-                <h3>Card 3</h3>
-                <p>local listing</p>
+              <Card className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+                <div className="relative h-full">
+                  <img 
+                    src="/local-citation.png" 
+                    alt="Local citation distribution and management"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <h3 className="text-lg font-bold mb-1">Business Optimization</h3>
+                    <p className="text-sm opacity-90">Stronger local authority</p>
+                  </div>
+                </div>
+              </Card>
+              <Card className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+                <div className="relative h-full">
+                  <img 
+                    src="/los-angeles-map-pack.png" 
+                    alt="Los Angeles market coverage across multiple neighborhoods"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <h3 className="text-lg font-bold mb-1">Geographic Reach</h3>
+                    <p className="text-sm opacity-90">Multi-city coverage</p>
+                  </div>
+                </div>
               </Card>
             </CardSwap>
           </div>
@@ -155,39 +199,60 @@ export default function Hero() {
           <div className="block md:hidden w-full h-[350px]">
             <ScrollStack>
               <ScrollStackItem>
-                <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=400&fit=crop&crop=center" 
-                  alt="A vibrant marketing analytics dashboard showing website performance metrics and SEO insights"
-                  className="w-full h-full object-cover rounded-lg"
-                />
+                <div className="relative w-full h-full rounded-lg overflow-hidden bg-neutral-900">
+                  <img 
+                    src="/gbp-map-pack.png" 
+                    alt="Google Business Profile map pack results"
+                    className="w-full h-full object-cover object-left md:object-cover md:object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <h3 className="text-lg font-bold mb-1">Local Search Domination</h3>
+                    <p className="text-sm opacity-90">Rank #1 for local searches</p>
+                  </div>
+                </div>
               </ScrollStackItem>
               <ScrollStackItem>
-                <img 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=400&fit=crop&crop=center" 
-                  alt="A modern Google My Business profile dashboard displaying local business optimization tools and customer reviews"
-                  className="w-full h-full object-cover rounded-lg"
-                />
+                <div className="relative w-full h-full rounded-lg overflow-hidden bg-neutral-900">
+                  <img 
+                    src="/ccb-targeted-web-traffic.png" 
+                    alt="Targeted web traffic analytics dashboard"
+                    className="w-full h-full object-cover object-left md:object-cover md:object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <h3 className="text-lg font-bold mb-1">Traffic Analytics</h3>
+                    <p className="text-sm opacity-90">13.9K Monthly Visits</p>
+                  </div>
+                </div>
               </ScrollStackItem>
               <ScrollStackItem>
-                <img 
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=400&fit=crop&crop=center" 
-                  alt="A comprehensive local business listing management interface showing directory optimization and citation tracking"
-                  className="w-full h-full object-cover rounded-lg"
-                />
+                <div className="relative w-full h-full rounded-lg overflow-hidden bg-neutral-900">
+                  <img 
+                    src="/local-citation.png" 
+                    alt="Local citation distribution and management"
+                    className="w-full h-full object-cover object-left md:object-cover md:object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <h3 className="text-lg font-bold mb-1">Business Optimization</h3>
+                    <p className="text-sm opacity-90">Stronger local authority</p>
+                  </div>
+                </div>
               </ScrollStackItem>
               <ScrollStackItem>
-                <img 
-                  src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=400&fit=crop&crop=center" 
-                  alt="A professional SEO strategy planning interface with keyword research and content optimization tools"
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </ScrollStackItem>
-              <ScrollStackItem>
-                <img 
-                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=400&fit=crop&crop=center" 
-                  alt="A comprehensive digital marketing analytics dashboard showing conversion tracking and ROI metrics"
-                  className="w-full h-full object-cover rounded-lg"
-                />
+                <div className="relative w-full h-full rounded-lg overflow-hidden bg-neutral-900">
+                  <img 
+                    src="/los-angeles-map-pack.png" 
+                    alt="Los Angeles market coverage across multiple neighborhoods"
+                    className="w-full h-full object-contain md:object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <h3 className="text-lg font-bold mb-1">Geographic Reach</h3>
+                    <p className="text-sm opacity-90">Multi-city coverage</p>
+                  </div>
+                </div>
               </ScrollStackItem>
             </ScrollStack>
           </div>
