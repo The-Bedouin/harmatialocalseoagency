@@ -37,7 +37,7 @@ const projects: Project[] = [
     ],
     imageZoom: 1.1,
     imagePosition: "object-top",
-    imageOffsetY: -99
+    imageOffsetY: -60
   },
   {
     title: "Glow Terra",
@@ -94,19 +94,19 @@ function ProjectCard({ project, tall, aspect }: { project: Project; tall?: boole
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-transparent" />
 
-            <div className="absolute inset-x-0 bottom-0 p-5">
-              <h3 className="text-white text-2xl font-semibold drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
+            <div className="absolute inset-x-0 bottom-0 p-3 sm:p-5">
+              <h3 className="text-white text-lg sm:text-2xl font-semibold drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] leading-tight">
                 {project.title}
               </h3>
-              <p className="text-white/85 text-sm mt-1">
+              <p className="text-white/85 text-xs sm:text-sm mt-1 leading-tight">
                 {project.subtitle}
               </p>
 
-              <div className="mt-4 flex flex-wrap gap-3">
+              <div className="mt-2 sm:mt-4 flex flex-wrap gap-2 sm:gap-3">
                 {project.metrics.map((m, i) => (
                   <span
                     key={i}
-                    className="text-[10px] tracking-wide uppercase rounded-full border border-white/25 bg-white/10 text-white/90 px-3 py-1 backdrop-blur-sm shadow-[0_8px_20px_rgba(0,0,0,0.25)]"
+                    className="text-[8px] sm:text-[10px] tracking-wide uppercase rounded-full border border-white/25 bg-white/10 text-white/90 px-2 py-0.5 sm:px-3 sm:py-1 backdrop-blur-sm shadow-[0_8px_20px_rgba(0,0,0,0.25)]"
                   >
                     {m.label}
                   </span>
