@@ -1,4 +1,3 @@
-import OneDollarHero from "@/components/OneDollarHero";
 import ODHeading from "@/components/ODHeading";
 import BlogHeader from "@/components/BlogHeader";
 import BlogCards from "@/components/BlogCards";
@@ -6,6 +5,7 @@ import StatementSection from "@/components/StatementSection";
 import WhyHarmatiaSection from "@/components/WhyHarmatiaSection";
 import NewsletterCard from "@/components/NewsletterCard";
 import BlogFooter from "@/components/BlogFooter";
+import BlogFeaturedSideCard from "@/components/BlogFeaturedSideCard";
 
 export const metadata = {
   title: "Level Up Your Money Game - Investment Strategies Blog | Harmatia SEO",
@@ -18,7 +18,7 @@ export default function BlogHome() {
     <div className="min-h-screen bg-white">
       <BlogHeader />
       <ODHeading />
-      <OneDollarHero />
+      <BlogFeaturedSideCard />
       <StatementSection />
       <BlogCards />
       <WhyHarmatiaSection />

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "What is Local SEO? Complete Guide to Dominating Local Search Results",
     description: "Master local SEO with our comprehensive guide covering Google Business Profile optimization, NAP citations, local content strategy, and advanced techniques to dominate local search results and attract more customers.",
     type: "article",
-    url: "https://harmatialocalseoagency.com/blog",
+    url: "https://harmatialocalseoagency.com/what-is-local-seo",
     images: [
       {
         url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Blog() {
+export default function WhatIsLocalSEO() {
   const schemaMarkup = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -57,7 +57,7 @@ export default function Blog() {
     "dateModified": "2024-12-15",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://harmatialocalseoagency.com/blog"
+      "@id": "https://harmatialocalseoagency.com/what-is-local-seo"
     },
     "keywords": ["local SEO", "Google Business Profile", "local search optimization", "NAP citations", "local SEO strategy", "local search results", "local SEO guide"],
     "articleSection": "Local SEO",
