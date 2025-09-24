@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import CardSwap, { Card } from "./CardSwap";
+import Image from "next/image";
 import ScrollStack, { ScrollStackItem } from "./ScrollStack";
 import TrueFocus from './TrueFocus';
 
@@ -138,10 +139,11 @@ export default function Hero() {
             >
               <Card className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
                 <div className="relative h-full">
-                  <img 
+                  <Image 
                     src="/gbp-map-pack.png" 
                     alt="Google Business Profile map pack results"
                     className="w-full h-full object-cover"
+                    fill
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -152,10 +154,11 @@ export default function Hero() {
               </Card>
               <Card className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
                 <div className="relative h-full">
-                  <img 
+                  <Image 
                     src="/ccb-targeted-web-traffic.png" 
                     alt="Targeted web traffic analytics dashboard"
                     className="w-full h-full object-cover"
+                    fill
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -166,10 +169,11 @@ export default function Hero() {
               </Card>
               <Card className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
                 <div className="relative h-full">
-                  <img 
+                  <Image 
                     src="/local-citation.png" 
                     alt="Local citation distribution and management"
                     className="w-full h-full object-cover"
+                    fill
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -180,10 +184,11 @@ export default function Hero() {
               </Card>
               <Card className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
                 <div className="relative h-full">
-                  <img 
+                  <Image 
                     src="/los-angeles-map-pack.png" 
                     alt="Los Angeles market coverage across multiple neighborhoods"
                     className="w-full h-full object-cover"
+                    fill
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -200,10 +205,11 @@ export default function Hero() {
             <ScrollStack>
               <ScrollStackItem>
                 <div className="relative w-full h-full rounded-lg overflow-hidden bg-neutral-900">
-                  <img 
+                  <Image 
                     src="/gbp-map-pack.png" 
                     alt="Google Business Profile map pack results"
                     className="w-full h-full object-cover object-left md:object-cover md:object-center"
+                    fill
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -214,10 +220,11 @@ export default function Hero() {
               </ScrollStackItem>
               <ScrollStackItem>
                 <div className="relative w-full h-full rounded-lg overflow-hidden bg-neutral-900">
-                  <img 
+                  <Image 
                     src="/ccb-targeted-web-traffic.png" 
                     alt="Targeted web traffic analytics dashboard"
                     className="w-full h-full object-cover object-left md:object-cover md:object-center"
+                    fill
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -228,10 +235,11 @@ export default function Hero() {
               </ScrollStackItem>
               <ScrollStackItem>
                 <div className="relative w-full h-full rounded-lg overflow-hidden bg-neutral-900">
-                  <img 
+                  <Image 
                     src="/local-citation.png" 
                     alt="Local citation distribution and management"
                     className="w-full h-full object-cover object-left md:object-cover md:object-center"
+                    fill
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 text-white">
@@ -242,10 +250,11 @@ export default function Hero() {
               </ScrollStackItem>
               <ScrollStackItem>
                 <div className="relative w-full h-full rounded-lg overflow-hidden bg-neutral-900">
-                  <img 
+                  <Image 
                     src="/los-angeles-map-pack.png" 
                     alt="Los Angeles market coverage across multiple neighborhoods"
                     className="w-full h-full object-contain md:object-cover"
+                    fill
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 text-white">

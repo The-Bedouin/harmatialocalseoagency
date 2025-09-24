@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function BlogSidebar() {
   const [activeSection, setActiveSection] = useState("introduction");
@@ -52,10 +53,12 @@ export default function BlogSidebar() {
         className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
       >
         <div className="flex items-center space-x-4 mb-4">
-          <img
+          <Image
             src="https://i.pravatar.cc/96?img=12"
             alt="Luke Roberts"
             className="w-16 h-16 rounded-full object-cover"
+            width={64}
+            height={64}
           />
           <div>
             <h3 className="font-semibold text-gray-900">Luke Roberts</h3>
@@ -136,10 +139,12 @@ export default function BlogSidebar() {
         <div className="space-y-4">
           {relatedPosts.map((post) => (
             <div key={post.id} className="flex space-x-3">
-              <img
+              <Image
                 src={post.image}
                 alt={post.title}
                 className="w-16 h-16 rounded object-cover flex-shrink-0"
+                width={64}
+                height={64}
               />
               <div className="flex-1 min-w-0">
                 <h4 className="text-sm font-medium text-gray-900 line-clamp-2 mb-1">

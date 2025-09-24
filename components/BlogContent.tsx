@@ -1,7 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function BlogContent() {
   const [helpfulRating, setHelpfulRating] = useState(0);
@@ -531,10 +533,12 @@ For businesses looking to accelerate their local SEO success, consider working w
             {/* Add relevant images for specific sections */}
             {section.id === "what-is-local-seo" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop"
                   alt="Local SEO search results showing Google Maps and local business listings"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Local SEO helps businesses appear in Google&apos;s local pack and Maps results
@@ -544,10 +548,12 @@ For businesses looking to accelerate their local SEO success, consider working w
             
             {section.id === "google-business-profile" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop"
                   alt="Google Business Profile dashboard showing business information and optimization options"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Google Business Profile is the foundation of your local SEO strategy
@@ -557,10 +563,12 @@ For businesses looking to accelerate their local SEO success, consider working w
             
             {section.id === "nap-citations" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=400&fit=crop"
                   alt="Business directory listings showing consistent NAP information across multiple platforms"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Consistent NAP citations across directories build trust with search engines
@@ -570,10 +578,12 @@ For businesses looking to accelerate their local SEO success, consider working w
             
             {section.id === "local-content-strategy" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&h=400&fit=crop"
                   alt="Local community content creation showing neighborhood-specific blog posts and local events"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Creating local content helps establish your business as a community authority
@@ -583,10 +593,12 @@ For businesses looking to accelerate their local SEO success, consider working w
             
             {section.id === "customer-reviews" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop"
                   alt="Customer reviews dashboard showing star ratings and review management tools"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Managing customer reviews is crucial for local SEO success and customer trust
@@ -596,10 +608,12 @@ For businesses looking to accelerate their local SEO success, consider working w
             
             {section.id === "local-link-building" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&h=400&fit=crop"
                   alt="Local business networking event showing community partnerships and collaboration"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Building local partnerships and community relationships strengthens your local SEO
@@ -609,10 +623,12 @@ For businesses looking to accelerate their local SEO success, consider working w
             
             {section.id === "technical-local-seo" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=400&fit=crop"
                   alt="Website optimization dashboard showing technical SEO metrics and schema markup implementation"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Technical optimization and schema markup improve your local search visibility
@@ -622,10 +638,12 @@ For businesses looking to accelerate their local SEO success, consider working w
             
             {section.id === "measuring-success" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop"
                   alt="Analytics dashboard showing local SEO metrics including Google Business Profile insights and ranking data"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Tracking key metrics helps measure and improve your local SEO performance

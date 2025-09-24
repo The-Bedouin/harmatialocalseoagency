@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import "./BounceCards.css";
 
@@ -135,7 +136,7 @@ export default function BounceCards({
           onMouseEnter={() => pushSiblings(idx)}
           onMouseLeave={resetSiblings}
         >
-          <img className="image" src={src} alt={`card-${idx}`} />
+          <Image className="image" src={src} alt={`card-${idx}`} width={400} height={400} />
         </div>
       ))}
     </div>

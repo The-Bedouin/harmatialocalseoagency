@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // Component added by Ansh - github.com/ansh-dhanani
 "use client";
 
