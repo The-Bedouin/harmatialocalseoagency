@@ -16,7 +16,7 @@ export default function StatementSection() {
             className="text-neutral-900 font-medium tracking-tight text-[44px] leading-[46px]"
             style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(28, 28, 28)'}}
           >
-            I'm so crazy for thinking I can pull this off.
+            I&apos;m so crazy for thinking I can pull this off.
           </motion.h2>
 
           {/* Right: paragraph + plus button */}

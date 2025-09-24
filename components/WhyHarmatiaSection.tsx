@@ -29,7 +29,7 @@ export default function WhyHarmatiaSection() {
               className="text-neutral-600 text-[18px] leading-[29px]"
               style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(110, 110, 110)'}}
             >
-              We're not just another SEO agency. We're your local business growth partners who understand the unique challenges of competing in today's digital landscape. Our proven strategies have helped hundreds of local businesses dominate their markets and achieve sustainable growth.
+              We&apos;re not just another SEO agency. We&apos;re your local business growth partners who understand the unique challenges of competing in today&apos;s digital landscape. Our proven strategies have helped hundreds of local businesses dominate their markets and achieve sustainable growth.
             </motion.p>
 
             <motion.div

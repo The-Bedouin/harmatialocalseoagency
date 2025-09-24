@@ -60,7 +60,7 @@ export default function NewsletterCard() {
                   {submitted ? (
                     <div className="rounded-xl border border-black/5 bg-neutral-50 p-4 text-center">
                       <p className="text-[15px]" style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(28, 28, 28)' }}>
-                        You're in. Check your inbox for a welcome email with your first playbook.
+                        You&apos;re in. Check your inbox for a welcome email with your first playbook.
                       </p>
                     </div>
                   ) : (

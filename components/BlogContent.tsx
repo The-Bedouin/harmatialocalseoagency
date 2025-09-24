@@ -537,7 +537,7 @@ For businesses looking to accelerate their local SEO success, consider working w
                   className="w-full rounded-lg shadow-md"
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
-                  Local SEO helps businesses appear in Google's local pack and Maps results
+                  Local SEO helps businesses appear in Google&apos;s local pack and Maps results
                 </p>
               </div>
             )}
@@ -739,7 +739,7 @@ For businesses looking to accelerate their local SEO success, consider working w
                   <span className="text-sm text-gray-500">2 days ago</span>
                 </div>
                 <p className="text-gray-700">
-                  Excellent guide! I've been struggling with local SEO for my restaurant. The Google Business Profile section was particularly helpful.
+                  Excellent guide! I&apos;ve been struggling with local SEO for my restaurant. The Google Business Profile section was particularly helpful.
                 </p>
               </div>
 
@@ -749,7 +749,7 @@ For businesses looking to accelerate their local SEO success, consider working w
                   <span className="text-sm text-gray-500">1 week ago</span>
                 </div>
                 <p className="text-gray-700">
-                  Thanks for the comprehensive overview. I'm interested in learning more about NAP citations. Any recommendations for local directories?
+                  Thanks for the comprehensive overview. I&apos;m interested in learning more about NAP citations. Any recommendations for local directories?
                 </p>
               </div>
 
