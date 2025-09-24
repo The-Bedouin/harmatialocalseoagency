@@ -75,8 +75,8 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4 md:gap-5">
               <div className="col-span-2 sm:col-span-1 relative aspect-[4/3] rounded-2xl overflow-hidden border border-black/10 ring-1 ring-black/5 shadow-[0_18px_30px_-12px_rgba(0,0,0,0.25)]">
                 <Image
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200&auto=format&fit=crop"
-                  alt="Our team collaborating on local SEO strategy"
+                  src="/digital-marketing-1725340_1280.jpg"
+                  alt="Digital analytics dashboard showing website performance metrics"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 520px"
                   className="object-cover"
@@ -84,8 +84,8 @@ export default function About() {
               </div>
               <div className="col-span-2 sm:col-span-1 relative aspect-[4/3] rounded-2xl overflow-hidden border border-black/10 ring-1 ring-black/5 shadow-[0_18px_30px_-12px_rgba(0,0,0,0.25)]">
                 <Image
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
-                  alt="Metrics dashboard showcasing business growth"
+                  src="/logo-google-1991840_1280.png"
+                  alt="Google logo representing search engine optimization"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 520px"
                   className="object-cover"
@@ -93,8 +93,8 @@ export default function About() {
               </div>
               <div className="col-span-2 relative aspect-[16/9] rounded-2xl overflow-hidden border border-black/10 ring-1 ring-black/5 shadow-[0_18px_30px_-12px_rgba(0,0,0,0.25)]">
                 <Image
-                  src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1400&auto=format&fit=crop"
-                  alt="Planning session with customer journey mapping"
+                  src="/search-engine-optimization-1359430_1280.png"
+                  alt="SEO mind map showing key optimization strategies and concepts"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 680px"
                   className="object-cover"

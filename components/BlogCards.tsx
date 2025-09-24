@@ -15,43 +15,43 @@ type BlogPost = {
 
 const posts: BlogPost[] = [
   {
-    category: "Wealth",
-    readTime: "4 min read",
+    category: "Local SEO",
+    readTime: "5 min read",
     title:
-      "How to Build Wealth from Scratch: The Ultimate Guide to Achieving Financial Freedom!",
+      "How to Optimize Your Google Business Profile for Local Searches",
     excerpt:
-      "Achieving financial freedom isn't a matter of luck; it's the result of strategic planning, disciplined action, and an unwavering...",
+      "As a local business owner, getting found online can make or break your success. Did you know that 72% of consumers who perform a local search use Google to discover businesses like yours? That's a huge opportunity! Your Google Business Profile (GBP) is often the first touchpoint, powering results in Google Search and Maps. But if it's not optimized, you're missing out on local customers. In this guide, I'll share simple tweaks to boost your rankings—focusing on photos, reviews, and more. As an SEO specialist at Harmatia Local, I've helped countless businesses skyrocket their visibility. Let's dive in.",
     author: "The SEO-Bedouin",
-    date: "Apr 19, 2025",
+    date: "Sep 23, 2025",
     image:
-      "https://images.unsplash.com/photo-1612817159949-1f97d1c5ad87?q=80&w=2000&auto=format&fit=crop",
-    href: "#",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
+    href: "/how-to-optimize-google-business-profile",
   },
   {
-    category: "Investing",
-    readTime: "7 min read",
-    title:
-      "The Millionaire's Secret: How to Invest Like the Ultra-Wealthy and Watch Your Money Grow",
-    excerpt:
-      "When you look at the ultra-wealthy, you might wonder how they seem to accumulate so much wealth, even during economic...",
-    author: "The SEO-Bedouin",
-    date: "Apr 18, 2025",
-    image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2000&auto=format&fit=crop",
-    href: "#",
-  },
-  {
-    category: "Savings",
+    category: "Local SEO",
     readTime: "6 min read",
     title:
-      "The Hidden Truth About Saving Money That Banks Don't Want You to Know!",
+      "Best Free Tools for Local Keyword Research Beginners",
     excerpt:
-      "When you put your money into a traditional savings account, you likely think you're taking a step toward financial security. But here's the...",
+      "As a local business owner, getting found online starts with the right keywords. But where do you begin if you're new to SEO? The good news: you don't need expensive tools to uncover keywords that attract local customers. As an SEO specialist at Harmatia Local, I've helped businesses boost their visibility using free tools. In this guide, I'll walk you through Google Keyword Planner and Google's 'People Also Ask' for quick wins, showing you how to drive more traffic and leads. Plus, I'll explain why these efforts pay off—potentially increasing your leads by 50% or more. Let's get started!",
     author: "The SEO-Bedouin",
-    date: "Apr 17, 2025",
+    date: "Sep 23, 2025",
     image:
-      "https://images.unsplash.com/photo-1520975693416-46f5d14222de?q=80&w=2000&auto=format&fit=crop",
-    href: "#",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
+    href: "/best-free-tools-local-keyword-research",
+  },
+  {
+    category: "Local SEO",
+    readTime: "7 min read",
+    title:
+      "Step-by-Step Guide to Website Speed for Local SEO Success",
+    excerpt:
+      "As a local business owner, your website is your digital storefront, but if it's slow, you're losing customers. Studies show that 50% of visitors abandon sites that take over 3 seconds to load. A fast website not only keeps visitors happy but also boosts your local SEO rankings, driving more foot traffic and leads. As an SEO specialist at Harmatia Local, I'll share simple, jargon-free steps to speed up your site, focusing on basics like image compression. Follow these tips to keep customers and rank higher—or let our optimization service accelerate your growth.",
+    author: "The SEO-Bedouin",
+    date: "Sep 24, 2025",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
+    href: "/website-speed-local-seo-guide",
   },
   {
     category: "Real Estate",

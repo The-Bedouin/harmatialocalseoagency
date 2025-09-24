@@ -16,37 +16,96 @@ type ServiceItem = {
 const SERVICES: ServiceItem[] = [
   {
     id: 1,
-    title: "Landing pages",
+    title: "Free SEO Consultation & Audit",
     blurb:
-      "Responsive and SEO-friendly, designed to turn visitors to customers.",
-    projectsLabel: "12 projects",
+      "Want more local customers finding your business online? Our free SEO check-up reveals what's stopping your website from ranking higher. We'll share simple, clear tips to boost your visibility and bring in more foot traffic—no tech talk, just results. Book your free consultation today and start growing!",
+    projectsLabel: "Free service",
     images: [
       {
         src:
-          "https://images.unsplash.com/photo-1547658719-94a6f1a8072b?q=80&w=800&auto=format&fit=crop",
-        alt: "Landing page mock 1",
+          "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop",
+        alt: "Team reviewing growth strategy and performance dashboards",
       },
       {
         src:
-          "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=800&auto=format&fit=crop",
-        alt: "Landing page mock 2",
+          "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=800&auto=format&fit=crop",
+        alt: "Laptop with website analytics and SEO performance graphs",
+      },
+      {
+        src:
+          "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800&auto=format&fit=crop",
+        alt: "Marketing analytics charts and metrics on screen",
+      },
+      {
+        src:
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+        alt: "SEO audit dashboard showing website analysis",
+      },
+      {
+        src:
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+        alt: "Local SEO consultation meeting",
       },
     ],
   },
   {
     id: 2,
-    title: "Social media ads",
-    blurb: "High-performing ads crafted to capture attention and drive clicks.",
+    title: "Google Business Profile Management",
+    blurb: "Stand out to local customers with our Google Business Profile Management. Your profile is often the first thing people see when searching for your business, but is it working hard enough? We optimize your listing with the right details, photos, and updates to attract more clicks, calls, and visits. No tech skills needed—we handle it all, so you get more customers through your door. Boost your local presence today!",
+    projectsLabel: "GBP",
+    images: [
+      { src: "/los-angeles-map-pack.png", alt: "Map pack coverage across Los Angeles neighborhoods" },
+      { src: "/ccb-map-rank.png", alt: "Local rankings across map results" },
+      { src: "/ccb-targeted-web-traffic.png", alt: "Targeted local web traffic analytics" },
+      { src: "/google-business-profile-report.png", alt: "Google Business Profile insights and performance report" },
+      { src: "/gbp-map-pack.png", alt: "Google Business Profile map pack results" },
+    ],
   },
   {
     id: 3,
-    title: "Email campaigns",
-    blurb: "Sequences that nurture leads and convert them into customers.",
+    title: "Website Optimisation",
+    blurb: "Turn your website into a customer magnet with our Website Optimisation service. Slow pages or confusing layouts could be pushing local customers away. We fine-tune your site to load faster, rank higher on search engines, and make it easy for visitors to take action—whether it’s calling, booking, or buying. No tech know-how required; we do the heavy lifting to drive more traffic and sales to your business. Start winning online today!",
+    projectsLabel: "Web",
+    images: [
+      {
+        src:
+          "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=800&auto=format&fit=crop",
+        alt: "Analytics graphs showing improved conversions",
+      },
+      {
+        src:
+          "https://images.unsplash.com/photo-1498079022511-d15614cb1c02?q=80&w=800&auto=format&fit=crop",
+        alt: "Design team enhancing website layout and usability",
+      },
+      {
+        src:
+          "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop",
+        alt: "Developer optimizing website performance and UX",
+      },
+      {
+        src:
+          "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=800&auto=format&fit=crop",
+        alt: "Laptop with code and UI improvements for website",
+      },
+      {
+        src:
+          "https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=800&auto=format&fit=crop",
+        alt: "Speed optimization and performance metrics dashboard",
+      },
+    ],
   },
   {
     id: 4,
-    title: "Lead automation",
-    blurb: "Systems that qualify, route, and follow up with leads automatically.",
+    title: "Google Ads Management",
+    blurb: "Get your business in front of local customers with our Local Google Ads Management. Not seeing enough clicks or calls from your ads? We create and manage targeted Google Ads campaigns to put your business at the top of local searches, driving more leads and sales. No guesswork—we handle everything to maximize your budget and results. Start attracting more customers today!",
+    projectsLabel: "Ads",
+    images: [
+      { src: "/los-angeles-map-pack.png", alt: "Map pack coverage across Los Angeles neighborhoods" },
+      { src: "/ccb-map-rank.png", alt: "Local rankings across map results" },
+      { src: "/ccb-targeted-web-traffic.png", alt: "Targeted local web traffic analytics" },
+      { src: "/google-business-profile-report.png", alt: "Google Business Profile insights and performance report" },
+      { src: "/gbp-map-pack.png", alt: "Google Business Profile map pack results" },
+    ],
   },
 ];
 
@@ -189,7 +248,12 @@ export default function Services() {
     return transformStr === "none" ? `translate(${dx}px)` : `${transformStr} translate(${dx}px)`;
   };
 
-  const perRowImages = SERVICES.map((_, i) => rotateArray(images, i));
+  // Prefer per-service images if provided; otherwise fall back to default placeholders
+  const perRowImages = SERVICES.map((service, i) =>
+    service.images && service.images.length > 0
+      ? service.images.map((img) => img.src)
+      : rotateArray(images, i)
+  );
   const perRowTransforms = SERVICES.map((_, i) => transformStyles.map((t) => shiftTranslateX(t, (i - 1) * 20)));
 
   return (

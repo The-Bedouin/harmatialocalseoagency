@@ -13,43 +13,38 @@ type Testimonial = {
 const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "I would highly recommend for companies looking to grow quick!",
-    name: "Ryan Smith",
-    title: "Ryanzz",
-    avatarUrl:
-      "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=96&h=96&fit=crop&crop=faces",
+      "Harmatia Local transformed my bakery's online presence! Their free SEO audit showed us exactly what was missing, and their Google Business Profile tweaks brought in more local customers. Professional, clear, and worth every penny!",
+    name: "Sanne van Dijk",
+    title: "Bakery Owner",
+    avatarUrl: "",
   },
   {
     quote:
-      "They broke down each part of the funnel into easy wins consistently.",
-    name: "Ian Cheung",
-    title: "Splitz.com",
-    avatarUrl:
-      "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=96&h=96&fit=crop&crop=faces",
+      "As a small shop owner, I didn't know much about SEO, but Harmatia Local made it simple. Their website optimisation doubled my online orders, and their team was so easy to work with. Highly recommend!",
+    name: "Chidubem Musa",
+    title: "Shop Owner",
+    avatarUrl: "",
   },
   {
     quote:
-      "Truly next-level experts in the game – partner with us now!",
-    name: "Emile Malpas",
-    title: "Colish",
-    avatarUrl:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=96&h=96&fit=crop&crop=faces",
+      "Harmatia Local's Google Ads service put my salon at the top of local searches. We're getting more bookings than ever, and their friendly team explained everything clearly. Fantastic results!",
+    name: "Emily Carter",
+    title: "Salon Owner",
+    avatarUrl: "",
   },
   {
     quote:
-      "They ship fast and with quality. Loved the collaborative process.",
-    name: "Ava Gomez",
-    title: "Riverlane",
-    avatarUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&fit=crop&crop=faces",
+      "The free consultation from Harmatia Local opened my eyes to how much business I was losing online. Their Google Business Profile management brought in more foot traffic to my café. Super professional and effective!",
+    name: "Jasper de Vries",
+    title: "Café Owner",
+    avatarUrl: "",
   },
   {
     quote:
-      "Clear strategy, crisp execution. Our inbound doubled in 60 days.",
-    name: "Priyank Patel",
-    title: "DeltaQ",
-    avatarUrl:
-      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=96&h=96&fit=crop&crop=faces",
+      "Harmatia Local optimised my website and set up targeted Google Ads. My gym's getting way more sign-ups now, and I love how they handle everything so I can focus on my business. Top-notch service!",
+    name: "Michael Thompson",
+    title: "Gym Owner",
+    avatarUrl: "",
   },
 ];
 
@@ -69,18 +64,27 @@ function Dot({ active, onClick }: { active: boolean; onClick: () => void }) {
 
 function QuoteCard({ item }: { item: Testimonial }) {
   return (
-    <div className="relative rounded-[22px] border border-black/10 bg-white p-7 shadow-[0_26px_60px_-24px_rgba(0,0,0,0.35)]">
-      <div className="text-3xl leading-none text-neutral-300 mb-3">“</div>
-      <p className="text-[20px] leading-[34px] text-[rgb(28,28,28)]">{item.quote}</p>
-      <div className="mt-6 flex items-center gap-3">
-        <img
-          src={item.avatarUrl}
-          alt=""
-          className="h-12 w-12 rounded-full object-cover"
-        />
-        <div>
-          <div className="text-[18px] text-neutral-900">{item.name}</div>
-          <div className="text-[15px] text-neutral-500">{item.title}</div>
+    <div className="group relative">
+      <div className="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-emerald-400/15 via-transparent to-blue-400/15 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500" />
+      <div className="relative overflow-hidden rounded-2xl border border-black/5 bg-white/90 supports-[backdrop-filter]:bg-white/60 backdrop-blur-sm p-8 shadow-[0_8px_30px_-8px_rgba(0,0,0,0.12)] hover:shadow-[0_16px_50px_-12px_rgba(0,0,0,0.22)] transition-all duration-500">
+        <div className="pointer-events-none absolute -top-10 -right-10 h-28 w-28 rounded-full bg-emerald-500/10 blur-2xl" />
+        <div className="pointer-events-none absolute -bottom-12 -left-12 h-32 w-32 rounded-full bg-blue-500/10 blur-2xl" />
+
+        <div className="text-5xl leading-none text-emerald-100 mb-4 font-serif">"</div>
+        <p className="text-[17px] sm:text-[18px] leading-[28px] text-neutral-800 mb-6" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>{item.quote}</p>
+
+        <div className="flex items-center justify-between pt-5 border-t border-neutral-100">
+          <div>
+            <div className="text-[16px] font-semibold text-neutral-900" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>{item.name}</div>
+            <div className="text-[14px] text-neutral-500 mt-1">{item.title}</div>
+          </div>
+          <div className="flex items-center gap-1 text-emerald-500">
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
         </div>
       </div>
     </div>
