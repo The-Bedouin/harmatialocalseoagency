@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function BlogContentGoogleBusinessProfile() {
   const [helpfulRating, setHelpfulRating] = useState(0);
@@ -219,10 +220,12 @@ Published on September 23, 2025 by the seo bedouin SEO Specialist at Harmatia Lo
             {/* Add relevant images for specific sections */}
             {section.id === "why-gbp-matters" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop"
                   alt="Google Business Profile showing local search results and business listings"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Google Business Profile is your digital storefront for local searches
@@ -232,10 +235,12 @@ Published on September 23, 2025 by the seo bedouin SEO Specialist at Harmatia Lo
             
             {section.id === "step-3-photos" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop"
                   alt="High-quality business photos showing storefront, interior, and products"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   High-quality photos significantly improve your Google Business Profile performance
@@ -245,10 +250,12 @@ Published on September 23, 2025 by the seo bedouin SEO Specialist at Harmatia Lo
             
             {section.id === "step-4-reviews" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop"
                   alt="Customer reviews dashboard showing star ratings and review management"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Managing customer reviews is crucial for local SEO success
@@ -361,7 +368,7 @@ Published on September 23, 2025 by the seo bedouin SEO Specialist at Harmatia Lo
                   <span className="text-sm text-gray-500">1 day ago</span>
                 </div>
                 <p className="text-gray-700">
-                  Great tips! I've been struggling with my Google Business Profile. The photo optimization section was particularly helpful.
+                  Great tips! I&apos;ve been struggling with my Google Business Profile. The photo optimization section was particularly helpful.
                 </p>
               </div>
 
@@ -371,7 +378,7 @@ Published on September 23, 2025 by the seo bedouin SEO Specialist at Harmatia Lo
                   <span className="text-sm text-gray-500">3 days ago</span>
                 </div>
                 <p className="text-gray-700">
-                  Thanks for the step-by-step guide. I'm going to implement these changes this week. The review management tips are gold!
+                  Thanks for the step-by-step guide. I&apos;m going to implement these changes this week. The review management tips are gold!
                 </p>
               </div>
             </div>

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function BlogContentWebsiteSpeed() {
   const [helpfulRating, setHelpfulRating] = useState(0);
@@ -348,10 +349,12 @@ Published on September 24, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
             {/* Add relevant images for specific sections */}
             {section.id === "why-speed-matters" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop"
                   alt="Website speed optimization showing fast loading times and performance metrics"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Fast website speed is crucial for local SEO success and user experience
@@ -361,10 +364,12 @@ Published on September 24, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
             
             {section.id === "step-1-check-speed" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop"
                   alt="Google PageSpeed Insights dashboard showing website speed test results and recommendations"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Use Google PageSpeed Insights to test and monitor your website speed
@@ -374,10 +379,12 @@ Published on September 24, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
             
             {section.id === "step-2-compress-images" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop"
                   alt="Image compression tools and techniques for optimizing website images"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Compressing images can reduce load times by 30-50% without losing quality

@@ -42,7 +42,7 @@ export default function BlogTOCSidebarGoogleBusinessProfile() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [tocItems]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);

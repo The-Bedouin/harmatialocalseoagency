@@ -20,7 +20,7 @@ const posts: BlogPost[] = [
     title:
       "How to Optimize Your Google Business Profile for Local Searches",
     excerpt:
-      "As a local business owner, getting found online can make or break your success. Did you know that 72% of consumers who perform a local search use Google to discover businesses like yours? That's a huge opportunity! Your Google Business Profile (GBP) is often the first touchpoint, powering results in Google Search and Maps. But if it's not optimized, you're missing out on local customers. In this guide, I'll share simple tweaks to boost your rankings—focusing on photos, reviews, and more. As an SEO specialist at Harmatia Local, I've helped countless businesses skyrocket their visibility. Let's dive in.",
+      "As a local business owner, getting found online can make or break your success. Did you know that 72% of consumers who perform a local search use Google to discover businesses like yours? That&apos;s a huge opportunity! Your Google Business Profile (GBP) is often the first touchpoint, powering results in Google Search and Maps. But if it&apos;s not optimized, you&apos;re missing out on local customers. In this guide, I&apos;ll share simple tweaks to boost your rankings—focusing on photos, reviews, and more. As an SEO specialist at Harmatia Local, I&apos;ve helped countless businesses skyrocket their visibility. Let&apos;s dive in.",
     author: "The SEO-Bedouin",
     date: "Sep 23, 2025",
     image:
@@ -33,7 +33,7 @@ const posts: BlogPost[] = [
     title:
       "Best Free Tools for Local Keyword Research Beginners",
     excerpt:
-      "As a local business owner, getting found online starts with the right keywords. But where do you begin if you're new to SEO? The good news: you don't need expensive tools to uncover keywords that attract local customers. As an SEO specialist at Harmatia Local, I've helped businesses boost their visibility using free tools. In this guide, I'll walk you through Google Keyword Planner and Google's 'People Also Ask' for quick wins, showing you how to drive more traffic and leads. Plus, I'll explain why these efforts pay off—potentially increasing your leads by 50% or more. Let's get started!",
+      "As a local business owner, getting found online starts with the right keywords. But where do you begin if you&apos;re new to SEO? The good news: you don&apos;t need expensive tools to uncover keywords that attract local customers. As an SEO specialist at Harmatia Local, I&apos;ve helped businesses boost their visibility using free tools. In this guide, I&apos;ll walk you through Google Keyword Planner and Google&apos;s &apos;People Also Ask&apos; for quick wins, showing you how to drive more traffic and leads. Plus, I&apos;ll explain why these efforts pay off—potentially increasing your leads by 50% or more. Let&apos;s get started!",
     author: "The SEO-Bedouin",
     date: "Sep 23, 2025",
     image:

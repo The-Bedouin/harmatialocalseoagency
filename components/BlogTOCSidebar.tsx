@@ -38,7 +38,7 @@ export default function BlogTOCSidebar() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [tableOfContents]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);

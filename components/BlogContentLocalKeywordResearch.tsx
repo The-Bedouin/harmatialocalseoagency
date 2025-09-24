@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function BlogContentLocalKeywordResearch() {
   const [helpfulRating, setHelpfulRating] = useState(0);
@@ -197,10 +198,12 @@ Published on September 23, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
             {/* Add relevant images for specific sections */}
             {section.id === "why-local-keyword-research" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop"
                   alt="Local keyword research showing search results and local business listings"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Local keyword research helps you target customers actively searching for your services
@@ -210,10 +213,12 @@ Published on September 23, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
             
             {section.id === "tool-1-google-keyword-planner" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop"
                   alt="Google Keyword Planner dashboard showing keyword research tools and metrics"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   Google Keyword Planner is a powerful free tool for discovering local keywords
@@ -223,10 +228,12 @@ Published on September 23, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
             
             {section.id === "tool-2-people-also-ask" && (
               <div className="mt-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop"
                   alt="Google search results showing People Also Ask section with related questions"
                   className="w-full rounded-lg shadow-md"
+                  width={800}
+                  height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
                   People Also Ask reveals real customer questions and search intent
@@ -339,7 +346,7 @@ Published on September 23, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
                   <span className="text-sm text-gray-500">2 days ago</span>
                 </div>
                 <p className="text-gray-700">
-                  Great guide! I've been struggling with keyword research for my local business. The Google Keyword Planner section was exactly what I needed to get started.
+                  Great guide! I&apos;ve been struggling with keyword research for my local business. The Google Keyword Planner section was exactly what I needed to get started.
                 </p>
               </div>
             </div>

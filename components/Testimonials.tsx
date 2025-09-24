@@ -70,7 +70,7 @@ function QuoteCard({ item }: { item: Testimonial }) {
         <div className="pointer-events-none absolute -top-10 -right-10 h-28 w-28 rounded-full bg-emerald-500/10 blur-2xl" />
         <div className="pointer-events-none absolute -bottom-12 -left-12 h-32 w-32 rounded-full bg-blue-500/10 blur-2xl" />
 
-        <div className="text-5xl leading-none text-emerald-100 mb-4 font-serif">"</div>
+        <div className="text-5xl leading-none text-emerald-100 mb-4 font-serif">&quot;</div>
         <p className="text-[17px] sm:text-[18px] leading-[28px] text-neutral-800 mb-6" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>{item.quote}</p>
 
         <div className="flex items-center justify-between pt-5 border-t border-neutral-100">
