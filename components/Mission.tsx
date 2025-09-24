@@ -44,6 +44,7 @@ function LightCard({ children }: { children: React.ReactNode }) {
   );
 }
 
+
 function StatLarge({ value, suffix, label }: { value: string; suffix?: string; label: string }) {
   return (
     <div className="rounded-2xl border border-black/10 bg-white p-6 sm:p-7 shadow-[0_18px_30px_-12px_rgba(0,0,0,0.28)]">

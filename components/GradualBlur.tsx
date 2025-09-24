@@ -1,11 +1,11 @@
 // Component added by Ansh - github.com/ansh-dhanani
 "use client";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import React, { CSSProperties, useEffect, useRef, useState, useMemo, PropsWithChildren } from 'react';
 import * as math from 'mathjs';
 
 import './GradualBlur.css';
-
 type GradualBlurProps = {
   position?: 'top' | 'bottom' | 'left' | 'right';
   strength?: number;
@@ -150,7 +150,6 @@ const useResponsiveDimension = (
     window.addEventListener('resize', deb);
     return () => window.removeEventListener('resize', deb);
   }, [responsive, config, key]);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return responsive ? val : (config as any)[key];
 };
 
