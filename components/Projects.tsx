@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 
 type Metric = { label: string };
 type Project = {

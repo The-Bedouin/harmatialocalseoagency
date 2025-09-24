@@ -2,13 +2,13 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 export default function BlogMobileSidebar() {
   const [activeTab, setActiveTab] = useState("toc");
   const [activeSection, setActiveSection] = useState("introduction");
 
-  const tableOfContents = [
+  const tableOfContents = useMemo(() => [
     { id: "introduction", title: "What is Local SEO? The Complete Guide", level: 1 },
     { id: "what-is-local-seo", title: "Understanding Local SEO: How It Works", level: 2 },
     { id: "google-business-profile", title: "Google Business Profile: Your Foundation", level: 2 },
@@ -21,7 +21,7 @@ export default function BlogMobileSidebar() {
     { id: "common-mistakes", title: "Common Mistakes to Avoid", level: 2 },
     { id: "advanced-strategies", title: "Advanced Strategies", level: 2 },
     { id: "conclusion", title: "Conclusion: Building Your Success", level: 1 },
-  ];
+  ], []);
 
   // Scroll tracking to highlight active section
   useEffect(() => {

@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 export default function BlogTOCSidebarGoogleBusinessProfile() {
   const [activeSection, setActiveSection] = useState("introduction");
   const [scrollProgress, setScrollProgress] = useState(0);
 
-  const tocItems = [
+  const tocItems = useMemo(() => [
     { id: "introduction", title: "Introduction", level: 1 },
     { id: "why-gbp-matters", title: "Why Your Google Business Profile Matters for Local SEO", level: 2 },
     { id: "step-1-claim-verify", title: "Step 1: Claim and Verify Your Profile", level: 2 },
@@ -16,7 +16,7 @@ export default function BlogTOCSidebarGoogleBusinessProfile() {
     { id: "step-4-reviews", title: "Step 4: Encourage and Manage Reviews", level: 2 },
     { id: "step-5-posts", title: "Step 5: Post Regular Updates and Offers", level: 2 },
     { id: "conclusion", title: "Ready to Take Your Local SEO to the Next Level?", level: 1 }
-  ];
+  ], []);
 
   // Scroll detection to update active section and progress
   useEffect(() => {

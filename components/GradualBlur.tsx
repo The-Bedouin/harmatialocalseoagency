@@ -114,8 +114,7 @@ const getGradientDirection = (position: string): string => {
   return directions[position] || 'to bottom';
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const debounce = <T extends (...a: any[]) => void>(fn: T, wait: number) => {
+const debounce = <T extends (...a: unknown[]) => void>(fn: T, wait: number) => {
   let t: ReturnType<typeof setTimeout>;
   return (...a: Parameters<T>) => {
     clearTimeout(t);
@@ -135,7 +134,7 @@ const useResponsiveDimension = (
     const calc = () => {
       const w = window.innerWidth;
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      let v: any = config[key];
+      let v: unknown = config[key];
       const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
       const k = cap(key as string);
       // eslint-disable-next-line @typescript-eslint/no-explicit-any

@@ -1,20 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 export default function BlogTOCSidebarLocalKeywordResearch() {
   const [activeSection, setActiveSection] = useState("introduction");
   const [scrollProgress, setScrollProgress] = useState(0);
 
-  const tocItems = [
+  const tocItems = useMemo(() => [
     { id: "introduction", title: "Introduction", level: 1 },
     { id: "why-local-keyword-research", title: "Why Local Keyword Research Matters", level: 2 },
     { id: "tool-1-google-keyword-planner", title: "Tool 1: Google Keyword Planner", level: 2 },
     { id: "tool-2-people-also-ask", title: "Tool 2: Google's 'People Also Ask' (PAA)", level: 2 },
     { id: "roi-of-keyword-research", title: "The ROI of Local Keyword Research", level: 2 },
     { id: "conclusion", title: "Need Expert Help to Maximize Results?", level: 1 }
-  ];
+  ], []);
 
   // Scroll detection to update active section and progress
   useEffect(() => {

@@ -78,19 +78,11 @@ export default function OneDollarHero() {
               {/* Image Container */}
               <div className="relative h-48 overflow-hidden bg-gray-100">
                 {/* Fallback regular img tag if Next.js Image fails */}
-                <img
+                <Image
                   src={card.image}
                   alt={card.alt}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  onError={(e) => {
-                    console.error(`Failed to load image: ${card.image}`, e);
-                    // Try to load with a different approach
-                    const target = e.target as HTMLImageElement;
-                    target.src = card.image;
-                  }}
-                  onLoad={() => {
-                    console.log(`Successfully loaded image: ${card.image}`);
-                  }}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>

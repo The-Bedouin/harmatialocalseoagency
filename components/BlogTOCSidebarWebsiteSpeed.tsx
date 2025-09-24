@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 export default function BlogTOCSidebarWebsiteSpeed() {
   const [activeSection, setActiveSection] = useState("introduction");
   const [scrollProgress, setScrollProgress] = useState(0);
 
-  const tocItems = [
+  const tocItems = useMemo(() => [
     { id: "introduction", title: "Introduction", level: 1 },
     { id: "why-speed-matters", title: "Why Website Speed Matters for Local SEO", level: 2 },
     { id: "step-1-check-speed", title: "Step 1: Check Your Current Website Speed", level: 2 },
@@ -16,7 +16,7 @@ export default function BlogTOCSidebarWebsiteSpeed() {
     { id: "step-4-minimize-code", title: "Step 4: Minimize CSS and JavaScript", level: 2 },
     { id: "step-5-test-monitor", title: "Step 5: Test and Monitor Regularly", level: 2 },
     { id: "conclusion", title: "Accelerate Your Growth with Expert Help", level: 1 }
-  ];
+  ], []);
 
   // Scroll detection to update active section and progress
   useEffect(() => {
