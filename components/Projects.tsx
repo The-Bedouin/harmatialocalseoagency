@@ -16,46 +16,46 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Hydrox",
-    subtitle: "52% increase in customers",
+    title: "Google Business profile (GBP)",
+    subtitle: "77% increase in customers",
     image: "/google-business-profile-report.png",
     metrics: [
-      { label: "90% increase in CTR" },
-      { label: "78% decline in bounce rate" }
+      { label: "99% increase in Calls" },
+      { label: "78% increase location direction" }
     ],
     imageZoom: 1.1,
     imagePosition: "object-bottom"
   },
   {
-    title: "Ganache",
-    subtitle: "From 100 too 500 sales per month",
+    title: "Website Health",
+    subtitle: "From 40 to 70 in  months",
     image: "/ahrefs-site-strenght-report.JPG",
     metrics: [
       { label: "84% increase in CTR" },
-      { label: "50% decrease in CAC" }
+      { label: "35% decrease in bounce rate " }
     ],
     imageZoom: 1.1,
     imagePosition: "object-top",
     imageOffsetY: -60
   },
   {
-    title: "Glow Terra",
-    subtitle: "52% increase in customers",
+    title: "Web Traffic",
+    subtitle: "52% increase in web customers",
     image: "/ccb-web-compettitor-analysis.png",
     metrics: [
-      { label: "90% increase in CTR" },
-      { label: "78% decline in bounce rate" }
+      { label: "71% increase in Rank" },
+      { label: "Doubled competitor traffic" }
     ],
     imageZoom: 1.1,
     imagePosition: "object-left"
   },
   {
-    title: "Colish",
-    subtitle: "46% increase in online sales",
+    title: " Digital Visibility",
+    subtitle: "75% increase in online clients/sales",
     image: "/ccb-map-rank.png",
     metrics: [
-      { label: "90% increase in CTR" },
-      { label: "78% decline in bounce rate" }
+      { label: "67% increase in gbp visibility" },
+      { label: "1st in all prime locations" }
     ],
     imageZoom: 1,
     imagePosition: "object-center"
@@ -130,7 +130,7 @@ export default function Projects() {
             <h3 className="text-[44px] leading-[46px] font-medium text-[rgb(28,28,28)]" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>Global impact</h3>
           </div>
           <div className="lg:col-span-5">
-            <p className="text-[18px] leading-[29px] font-normal text-[rgb(110,110,110)] max-w-sm" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>Helping service-based businesses attract, convert, and grow on autopilot.</p>
+            <p className="text-[18px] leading-[29px] font-normal text-[rgb(110,110,110)] max-w-sm" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>Helping businesses attract, convert, and grow on autopilot.</p>
           </div>
         </div>
 

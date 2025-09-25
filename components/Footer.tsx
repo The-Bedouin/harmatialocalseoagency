@@ -94,7 +94,7 @@ export default function Footer() {
             <div className="text-xs uppercase tracking-wide text-white/60">Contact</div>
             <div className="mt-3 space-y-2 text-white/80">
               <a href="mailto:services@harmatialocalseoagency.com" className="hover:text-white transition-colors">services@harmatialocalseoagency.com</a>
-              <a href="tel:+1234567890" className="block hover:text-white transition-colors">+1 (234) 567-890</a>
+              <a href="tel:+2347076039697" className="block hover:text-white transition-colors">+234 707 603 9697</a>
               <div className="flex items-center gap-2 pt-0.5">
                 {socials.map((s) => (
                   <a
@@ -155,7 +155,10 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-5 border-t border-white/10 pt-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-sm text-white/60">
-          <div>© {new Date().getFullYear()} HarmatiaLocal-SEOAgency. All rights reserved.</div>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+            <div>© {new Date().getFullYear()} HarmatiaLocal-SEOAgency. All rights reserved.</div>
+            <div className="text-white/40">Website built by Harmatia Local</div>
+          </div>
           <div className="flex items-center gap-4">
             <Link href="#" className="hover:text-white transition-colors">Privacy</Link>
             <span className="opacity-30">•</span>

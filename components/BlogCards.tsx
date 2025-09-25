@@ -54,43 +54,43 @@ const posts: BlogPost[] = [
     href: "/website-speed-local-seo-guide",
   },
   {
-    category: "Real Estate",
-    readTime: "8 min read",
-    title:
-      "The Real Estate Revolution: How Smart Investors Are Building Million-Dollar Portfolios",
-    excerpt:
-      "The real estate market has changed dramatically, and those who understand the new rules are building incredible wealth. Discover the strategies...",
-    author: "The SEO-Bedouin",
-    date: "Apr 16, 2025",
-    image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2000&auto=format&fit=crop",
-    href: "#",
-  },
-  {
-    category: "Cryptocurrency",
+    category: "Local SEO",
     readTime: "5 min read",
     title:
-      "Bitcoin Beyond the Hype: A Practical Guide to Digital Currency Investment",
+      "Common Mistakes in Local SEO Audits and How to Fix Them",
     excerpt:
-      "Cryptocurrency isn't just a trend—it's the future of money. Learn how to navigate this exciting but volatile market with confidence and...",
+      "Discover the 5 most common local SEO audit mistakes that cost you leads. Learn how to fix them with our DIY checklist and free professional audit from Harmatia Local experts.",
     author: "The SEO-Bedouin",
-    date: "Apr 15, 2025",
+    date: "Sep 25, 2025",
     image:
-      "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2000&auto=format&fit=crop",
-    href: "#",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
+    href: "/common-mistakes-local-seo-audits",
   },
   {
-    category: "Business",
-    readTime: "9 min read",
+    category: "Local SEO",
+    readTime: "7 min read",
     title:
-      "From Side Hustle to Empire: The Entrepreneur's Guide to Scaling Your Business",
+      "Local SEO Strategies for Small Businesses",
     excerpt:
-      "Starting a business is one thing, but scaling it to generate real wealth is another. Here's how successful entrepreneurs turn their ideas into...",
+      "Discover proven local SEO strategies that help small businesses dominate local search results and attract more customers. Expert tips and real case studies from Harmatia Local.",
     author: "The SEO-Bedouin",
-    date: "Apr 14, 2025",
+    date: "Sep 25, 2025",
     image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2000&auto=format&fit=crop",
-    href: "#",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
+    href: "/local-seo-strategies-for-small-businesses",
+  },
+  {
+    category: "Local SEO",
+    readTime: "6 min read",
+    title:
+      "Why Local Businesses Need Google Ads for More Foot Traffic",
+    excerpt:
+      "As a local business owner, you want more customers walking through your door. Google Ads can put you at the top of local search results and double your leads on a small budget. Here's how to target neighborhoods and drive real foot traffic—plus real success stories.",
+    author: "The SEO-Bedouin",
+    date: "Sep 25, 2025",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
+    href: "/why-local-businesses-need-google-ads",
   },
 ];
 

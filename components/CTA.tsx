@@ -12,11 +12,11 @@ export default function CTA() {
               <p className="mt-1 text-[16px] leading-[26px] text-[rgb(110,110,110)] max-w-xl" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>Book a free SEO audit and get an actionable plan for more calls, visits, and reviews.</p>
             </div>
             <div className="flex shrink-0 gap-3">
-              <a href="#contact" className="btn-green btn-green-lg">
+              <a href="https://calendly.com/harmatia/30min" target="_blank" className="btn-green btn-green-lg">
                 Book free audit
               </a>
-              <a href="#pricing" className="btn-outline">
-                View pricing
+              <a href="/#projects" className="btn-outline">
+                See our results
               </a>
             </div>
           </div>

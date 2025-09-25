@@ -109,7 +109,8 @@ export default function OneDollarHero() {
         {/* CTA Section */}
         <div className="text-center mt-12">
           <motion.a 
-            href="/contact"
+            href="https://calendly.com/harmatia/30min"
+            target="_blank"
             className="inline-flex items-center gap-3 bg-emerald-600 text-white px-8 py-4 rounded-xl hover:bg-emerald-700 transition-colors text-lg font-semibold shadow-lg hover:shadow-xl"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

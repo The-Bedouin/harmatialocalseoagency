@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 type BlogPost = {
   category: string;
@@ -14,36 +15,73 @@ type BlogPost = {
   href?: string;
 };
 
-const similarPosts: BlogPost[] = [
+// Centralized catalog of existing internal articles to support internal linking
+const catalog: BlogPost[] = [
   {
     category: "Local SEO",
-    readTime: "6 min read",
-    title: "Google Business Profile Optimization: Complete Guide to Dominating Local Search",
-    excerpt: "Master your Google Business Profile with our comprehensive optimization guide. Learn proven strategies to improve your local search rankings and attract more customers...",
+    readTime: "5-7 min read",
+    title: "How to Optimize Your Google Business Profile for Local Searches",
+    excerpt:
+      "Simple steps to enhance your GBP with photos, reviews, and more for better local SEO.",
     author: "The SEO-Bedouin",
-    date: "Dec 10, 2024",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop",
-    href: "#",
+    date: "Sep 23, 2025",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
+    href: "/how-to-optimize-google-business-profile",
   },
   {
     category: "Local SEO",
-    readTime: "8 min read",
-    title: "Local SEO Checklist: 25 Essential Steps to Boost Your Local Rankings",
-    excerpt: "Follow our comprehensive local SEO checklist to improve your business visibility in local search results. From NAP consistency to local link building...",
+    readTime: "6 min read",
+    title: "Best Free Tools for Local Keyword Research Beginners",
+    excerpt:
+      "Get started with Google Keyword Planner and People Also Ask to find local keywords.",
     author: "The SEO-Bedouin",
-    date: "Dec 5, 2024",
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2000&auto=format&fit=crop",
-    href: "#",
+    date: "Sep 23, 2025",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
+    href: "/best-free-tools-local-keyword-research",
+  },
+  {
+    category: "Local SEO",
+    readTime: "7 min read",
+    title: "Step-by-Step Guide to Website Speed for Local SEO Success",
+    excerpt:
+      "Improve Core Web Vitals with practical speed tips that boost local rankings and conversions.",
+    author: "The SEO-Bedouin",
+    date: "Sep 24, 2025",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
+    href: "/website-speed-local-seo-guide",
+  },
+  {
+    category: "Local SEO",
+    readTime: "6 min read",
+    title: "Why Local Businesses Need Google Ads for More Foot Traffic",
+    excerpt:
+      "Target neighborhoods on low budgets to double leads and drive in-store visits.",
+    author: "The SEO-Bedouin",
+    date: "Sep 25, 2025",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
+    href: "/why-local-businesses-need-google-ads",
+  },
+  {
+    category: "Local SEO",
+    readTime: "7 min read",
+    title: "Local SEO Strategies for Small Businesses",
+    excerpt:
+      "GBP optimization, citations, and local content tactics to dominate local search.",
+    author: "The SEO-Bedouin",
+    date: "Sep 25, 2025",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
+    href: "/local-seo-strategies-for-small-businesses",
   },
   {
     category: "Local SEO",
     readTime: "5 min read",
-    title: "NAP Citations: How to Build Consistent Business Listings Across the Web",
-    excerpt: "Learn how to build consistent Name, Address, and Phone number citations across directories and platforms to strengthen your local SEO foundation...",
+    title: "Common Mistakes in Local SEO Audits and How to Fix Them",
+    excerpt:
+      "Avoid unclaimed GBPs, inconsistent NAP, missed keywords, and slow sites with this checklist.",
     author: "The SEO-Bedouin",
-    date: "Nov 28, 2024",
-    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?q=80&w=2000&auto=format&fit=crop",
-    href: "#",
+    date: "Sep 25, 2025",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
+    href: "/common-mistakes-local-seo-audits",
   },
 ];
 
@@ -116,6 +154,13 @@ function SimilarArticleCard({ post }: { post: BlogPost }) {
 }
 
 export default function SimilarArticles() {
+  const pathname = usePathname();
+
+  // Simple route-aware related selection: exclude current page and pick 3 thematically close items
+  const related = catalog
+    .filter((p) => p.href !== pathname)
+    .slice(0, 3);
+
   return (
     <section aria-labelledby="similar-articles-heading" className="relative py-12 sm:py-16 lg:py-20 bg-white">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
@@ -135,7 +180,7 @@ export default function SimilarArticles() {
         </motion.div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {similarPosts.map((post, index) => (
+          {related.map((post, index) => (
             <motion.div
               key={post.title}
               initial={{ opacity: 0, y: 20 }}

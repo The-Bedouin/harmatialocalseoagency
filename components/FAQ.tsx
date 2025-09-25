@@ -12,12 +12,12 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: "What services do you offer?",
     answer:
-      "We specialize in local SEO strategies, including on-page optimization, backlink building, and content marketing to help businesses rank higher in local search results.",
+      "We specialize in local SEO strategies from website develoapment, on-page optimization, backlink building to content marketing to help businesses rank higher in local search results.",
   },
   {
     question: "How long does it take to see results?",
     answer:
-      "While results can vary, clients typically begin to see noticeable improvements in their search rankings and organic traffic within 3-6 months.",
+      "While results can vary, clients typically begin to see noticeable improvements in their search rankings and organic traffic within a month and sigificant changes in profits within  3-6 months.",
   },
   {
     question: "How do I get started?",
@@ -74,7 +74,7 @@ export default function FAQ() {
               className="text-[18px] leading-[29px] font-normal text-[rgb(110,110,110)] max-w-sm"
               style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}
             >
-              Find quick answers about our local SEO services, timelines, and how to begin.
+              Find quick answers about our SEO services, timelines, and how to begin.
             </p>
           </div>
         </div>

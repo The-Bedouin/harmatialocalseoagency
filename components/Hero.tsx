@@ -64,12 +64,13 @@ export default function Hero() {
             </h1>
 
             <p className="open-runde-400-paragraph mt-4 max-w-xl">
-              We empower local businesses to dominate search results and attract more customers with proven, tailored SEO strategies.
+              We help businesses dominate search results and attract more customers with proven, tailored SEO strategies-The best Digital marketing method!
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row gap-4">
               <motion.a
-                href="#contact"
+                href="https://calendly.com/harmatia/30min"
+                target="_blank"
                 className="px-6 py-3 rounded-2xl text-white bg-black shadow-[0_20px_40px_rgba(0,0,0,0.25)] transition-colors"
                 whileHover={{ 
                   scale: 1.05,
@@ -86,7 +87,7 @@ export default function Hero() {
                 Drive results now
               </motion.a>
               <motion.a
-                href="#learn"
+                href="/about"
                 className="px-6 py-3 rounded-2xl border border-black/10 bg-white text-neutral-900 transition-colors"
                 whileHover={{ 
                   scale: 1.05,

@@ -70,7 +70,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div className="text-sm uppercase tracking-wide text-neutral-500">Phone</div>
-                    <a href="tel:+1234567890" className="text-neutral-900 hover:underline">+1 (234) 567-890</a>
+                    <a href="tel:+2347076039697" className="text-neutral-900 hover:underline">+234 707 603 9697</a>
                   </div>
                   <div>
                     <div className="text-sm uppercase tracking-wide text-neutral-500">Hours</div>

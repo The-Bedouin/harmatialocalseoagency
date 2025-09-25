@@ -36,7 +36,7 @@ export default function FloatingBadges() {
       }`}
     >
       <a
-        href="https://calendly.com/ramish-design"
+        href="https://calendly.com/harmatia/30min"
         target="_blank"
         className="btn-green btn-green-lg rounded-2xl"
       >
