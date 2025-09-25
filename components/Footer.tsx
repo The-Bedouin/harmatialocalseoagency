@@ -93,7 +93,7 @@ export default function Footer() {
           <div className="md:col-span-4 lg:col-span-4">
             <div className="text-xs uppercase tracking-wide text-white/60">Contact</div>
             <div className="mt-3 space-y-2 text-white/80">
-              <a href="mailto:hello@harmatia.agency" className="hover:text-white transition-colors">hello@harmatia.agency</a>
+              <a href="mailto:services@harmatialocalseoagency.com" className="hover:text-white transition-colors">services@harmatialocalseoagency.com</a>
               <a href="tel:+1234567890" className="block hover:text-white transition-colors">+1 (234) 567-890</a>
               <div className="flex items-center gap-2 pt-0.5">
                 {socials.map((s) => (

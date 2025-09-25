@@ -66,7 +66,7 @@ export default function ContactPage() {
                 <div className="relative z-10 space-y-3">
                   <div>
                     <div className="text-sm uppercase tracking-wide text-neutral-500">Email</div>
-                    <a href="mailto:hello@harmatia.agency" className="text-neutral-900 hover:underline">hello@harmatia.agency</a>
+                    <a href="mailto:services@harmatialocalseoagency.com" className="text-neutral-900 hover:underline">services@harmatialocalseoagency.com</a>
                   </div>
                   <div>
                     <div className="text-sm uppercase tracking-wide text-neutral-500">Phone</div>
