@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "lint:check": "node scripts/lint-check.js",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
     "@vercel/speed-insights": "^1.2.0",
