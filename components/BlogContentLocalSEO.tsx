@@ -105,7 +105,7 @@ export default function BlogContentLocalSEO() {
                   height={400}
                 />
                 <p className="text-sm text-neutral-500 mt-2 text-center">
-                  Local SEO helps your business appear in "near me" searches
+                  Local SEO helps your business appear in &quot;near me&quot; searches
                 </p>
               </div>
             )}
