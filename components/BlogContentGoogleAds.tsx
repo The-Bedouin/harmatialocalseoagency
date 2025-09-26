@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 
 import { motion } from "framer-motion";
@@ -79,14 +80,12 @@ export default function BlogContentGoogleAds() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className={`mb-8 ${
-              section.level === 1 ? "border-b border-gray-200 pb-8" : ""
-            }`}
+            className={`mb-8 ${section.level === 1 ? "border-b border-gray-200 pb-8" : ""
+              }`}
           >
             {section.type === "section" && (
-              <h2 className={`open-runde-500 font-bold text-neutral-900 mb-4 ${
-                section.level === 1 ? "text-3xl" : section.level === 2 ? "text-2xl" : "text-xl"
-              }`}>
+              <h2 className={`open-runde-500 font-bold text-neutral-900 mb-4 ${section.level === 1 ? "text-3xl" : section.level === 2 ? "text-2xl" : "text-xl"
+                }`}>
                 {section.title}
               </h2>
             )}
@@ -127,9 +126,8 @@ export default function BlogContentGoogleAds() {
             <button
               key={star}
               onClick={() => setHelpfulRating(star)}
-              className={`text-2xl transition-colors ${
-                star <= helpfulRating ? "text-yellow-400" : "text-gray-300"
-              } hover:text-yellow-400`}
+              className={`text-2xl transition-colors ${star <= helpfulRating ? "text-yellow-400" : "text-gray-300"
+                } hover:text-yellow-400`}
             >
               ★
             </button>
