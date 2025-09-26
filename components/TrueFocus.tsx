@@ -88,7 +88,7 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
         const isActive = index === currentIndex;
         return (
           <span
-            key={index}
+            key={`${word}-${index}`}
             ref={el => {
               if (el) {
                 wordRefs.current[index] = el;
@@ -136,10 +136,10 @@ const TrueFocus: React.FC<TrueFocusProps> = ({
           } as React.CSSProperties
         }
       >
-        <span className="corner top-left"></span>
-        <span className="corner top-right"></span>
-        <span className="corner bottom-left"></span>
-        <span className="corner bottom-right"></span>
+        <span className="corner top-left" />
+        <span className="corner top-right" />
+        <span className="corner bottom-left" />
+        <span className="corner bottom-right" />
       </motion.div>
     </div>
   );
