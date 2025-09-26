@@ -14,7 +14,7 @@ export default function BlogContentLocalKeywordResearch() {
       type: "section",
       title: "Best Free Tools for Local Keyword Research Beginners",
       level: 1,
-      content: `As a local business owner, getting found online starts with the right keywords. But where do you begin if you're new to SEO? The good news: you don't need expensive tools to uncover keywords that attract local customers. As an SEO specialist at Harmatia Local, I've helped businesses boost their visibility using free tools. In this guide, I'll walk you through Google Keyword Planner and Google's "People Also Ask" for quick wins, showing you how to drive more traffic and leads. Plus, I'll explain why these efforts pay off—potentially increasing your leads by 50% or more. Let's get started!
+      content: `As a local business owner, getting found online starts with the right keywords. But where do you begin if you&apos;re new to SEO? The good news: you don&apos;t need expensive tools to uncover keywords that attract local customers. As an SEO specialist at Harmatia Local, I&apos;ve helped businesses boost their visibility using free tools. In this guide, I&apos;ll walk you through Google Keyword Planner and Google&apos;s "People Also Ask" for quick wins, showing you how to drive more traffic and leads. Plus, I&apos;ll explain why these efforts pay off—potentially increasing your leads by 50% or more. Let&apos;s get started!
 
 Quick Answer: The best free tools for local keyword research are Google Keyword Planner and Google's "People Also Ask" section. These tools help you find high-intent local keywords that can increase your leads by 50% or more without any cost.
 
@@ -134,7 +134,7 @@ Real Results from Local Keyword Research:
 • Higher Conversion Rates: Local keywords convert 3x better than general terms
 • Cost Savings: Free tools eliminate expensive keyword research software costs
 • Faster Results: Local SEO typically shows results in 30-90 days
-• Competitive Advantage: Most local businesses don't optimize their keywords
+• Competitive Advantage: Most local businesses don&apos;t optimize their keywords
 
 Success Story Example:
 A local bakery in Austin optimized for "best birthday cakes Austin" and "custom cakes near me." Within 60 days, they saw:

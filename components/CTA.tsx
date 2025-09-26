@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CTA() {
   return (
     <section className="py-8">
@@ -15,9 +17,9 @@ export default function CTA() {
               <a href="https://calendly.com/harmatia/30min" target="_blank" className="btn-green btn-green-lg">
                 Book free audit
               </a>
-              <a href="/#projects" className="btn-outline">
+              <Link href="/#projects" className="btn-outline">
                 See our results
-              </a>
+              </Link>
             </div>
           </div>
           <div className="pointer-events-none absolute -right-8 -top-8 h-40 w-40 rounded-full bg-[radial-gradient(rgba(0,0,0,0.06),transparent_60%)]"></div>

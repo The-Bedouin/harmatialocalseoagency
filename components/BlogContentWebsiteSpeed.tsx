@@ -221,7 +221,7 @@ What to Remove:
 • Unused JavaScript - Scripts that aren't needed
 • Unused plugins - Deactivate and delete unused WordPress plugins
 • Unused themes - Keep only active theme
-• Unused fonts - Remove fonts you don't use
+• Unused fonts - Remove fonts you don&apos;t use
 
 Code Optimization Best Practices:
 • Combine files - Merge multiple CSS/JS files
@@ -244,7 +244,7 @@ Pro Tips:
       type: "section",
       title: "Step 5: Test and Monitor Regularly",
       level: 2,
-      content: `Speed isn't a one-time fix. Regular testing and monitoring ensure your site stays fast as you add new content or make changes.
+      content: `Speed isn&apos;t a one-time fix. Regular testing and monitoring ensure your site stays fast as you add new content or make changes.
 
 Monthly Testing Routine:
 1. Test with Google PageSpeed Insights - Check mobile and desktop scores

@@ -39,7 +39,7 @@ export default function BlogHeroLocalSEOAudit() {
             className="text-lg sm:text-xl leading-relaxed text-neutral-600 max-w-3xl mx-auto mb-8"
             style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}
           >
-            As a local business owner, a local SEO audit can reveal why your website isn't attracting nearby customers. But many audits miss critical issues, costing you leads and sales. With 46% of Google searches seeking local businesses, fixing these mistakes can boost your visibility and foot traffic.
+            As a local business owner, a local SEO audit can reveal why your website isn&apos;t attracting nearby customers. But many audits miss critical issues, costing you leads and sales. With 46% of Google searches seeking local businesses, fixing these mistakes can boost your visibility and foot traffic.
           </p>
 
           {/* Author Info */}
