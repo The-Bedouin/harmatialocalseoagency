@@ -139,6 +139,7 @@ export default function TopNav() {
           <a
             href="https://calendly.com/ramish-design"
             target="_blank"
+            rel="noreferrer"
             className="btn-green btn-green-sm hidden xs:inline-flex"
           >
             Call

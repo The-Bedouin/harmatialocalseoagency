@@ -70,13 +70,13 @@ export default function BlogSidebar() {
         </p>
         <div className="flex space-x-3">
           <a href="#" className="text-blue-600 hover:text-blue-800">
-            <i className="fab fa-twitter"></i>
+            <i className="fab fa-twitter" />
           </a>
           <a href="#" className="text-blue-600 hover:text-blue-800">
-            <i className="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin" />
           </a>
           <a href="#" className="text-blue-600 hover:text-blue-800">
-            <i className="fab fa-facebook"></i>
+            <i className="fab fa-facebook" />
           </a>
         </div>
       </motion.div>
@@ -95,13 +95,11 @@ export default function BlogSidebar() {
               key={item.id}
               href={`#${item.id}`}
               onClick={() => setActiveSection(item.id)}
-              className={`block text-sm transition-colors ${
-                activeSection === item.id
+              className={`block text-sm transition-colors ${activeSection === item.id
                   ? "text-blue-600 font-medium"
                   : "text-gray-600 hover:text-gray-900"
-              } ${
-                item.level === 1 ? "font-medium" : item.level === 2 ? "ml-4" : "ml-8"
-              }`}
+                } ${item.level === 1 ? "font-medium" : item.level === 2 ? "ml-4" : "ml-8"
+                }`}
             >
               {item.title}
             </a>
@@ -117,7 +115,7 @@ export default function BlogSidebar() {
         className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-lg border border-blue-200 p-6 text-center"
       >
         <div className="mb-4">
-          <i className="fas fa-chart-line text-3xl text-blue-600 mb-2"></i>
+          <i className="fas fa-chart-line text-3xl text-blue-600 mb-2" />
           <h4 className="font-semibold text-gray-900">Harmatia SEO Tools</h4>
         </div>
         <p className="text-sm text-gray-700 mb-4">
@@ -167,18 +165,18 @@ export default function BlogSidebar() {
         <h3 className="font-semibold text-gray-900 mb-4">Share This Article</h3>
         <div className="flex space-x-3">
           <button className="flex-1 bg-blue-600 text-white py-2 px-3 rounded-md hover:bg-blue-700 transition-colors text-sm">
-            <i className="fab fa-facebook mr-2"></i>Facebook
+            <i className="fab fa-facebook mr-2" />Facebook
           </button>
           <button className="flex-1 bg-blue-400 text-white py-2 px-3 rounded-md hover:bg-blue-500 transition-colors text-sm">
-            <i className="fab fa-twitter mr-2"></i>Twitter
+            <i className="fab fa-twitter mr-2" />Twitter
           </button>
         </div>
         <div className="flex space-x-3 mt-2">
           <button className="flex-1 bg-blue-700 text-white py-2 px-3 rounded-md hover:bg-blue-800 transition-colors text-sm">
-            <i className="fab fa-linkedin mr-2"></i>LinkedIn
+            <i className="fab fa-linkedin mr-2" />LinkedIn
           </button>
           <button className="flex-1 bg-gray-600 text-white py-2 px-3 rounded-md hover:bg-gray-700 transition-colors text-sm">
-            <i className="fas fa-envelope mr-2"></i>Email
+            <i className="fas fa-envelope mr-2" />Email
           </button>
         </div>
       </motion.div>
