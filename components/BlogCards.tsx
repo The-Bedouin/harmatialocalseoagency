@@ -36,7 +36,7 @@ const posts: BlogPost[] = [
     excerpt:
       "As a local business owner, getting found online starts with the right keywords. But where do you begin if you&apos;re new to SEO? The good news: you don&apos;t need expensive tools to uncover keywords that attract local customers. As an SEO specialist at Harmatia Local, I&apos;ve helped businesses boost their visibility using free tools. In this guide, I&apos;ll walk you through Google Keyword Planner and Google&apos;s &apos;People Also Ask&apos; for quick wins, showing you how to drive more traffic and leads. Plus, I&apos;ll explain why these efforts pay off—potentially increasing your leads by 50% or more. Let&apos;s get started!",
     author: "The SEO-Bedouin",
-    date: "Sep 23, 2025",
+    date: "Sep 23, 2025.",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
     href: "/best-free-tools-local-keyword-research",
