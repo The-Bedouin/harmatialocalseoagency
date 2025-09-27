@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Cta() {
+export default function CallToAction() {
   return (
     <section className="py-8">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">

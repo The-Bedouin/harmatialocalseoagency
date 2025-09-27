@@ -41,7 +41,7 @@ const Faq_ITEMS: FaqItem[] = [
   },
 ];
 
-export default function Faq() {
+export default function FrequentlyAskedQuestions() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggle = (index: number) => {
