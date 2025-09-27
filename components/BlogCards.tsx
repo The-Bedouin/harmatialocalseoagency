@@ -23,7 +23,7 @@ const posts: BlogPost[] = [
     excerpt:
       "As a local business owner, getting found online can make or break your success. Did you know that 72% of consumers who perform a local search use Google to discover businesses like yours? That&apos;s a huge opportunity! Your Google Business Profile (GBP) is often the first touchpoint, powering results in Google Search and Maps. But if it&apos;s not optimized, you&apos;re missing out on local customers. In this guide, I&apos;ll share simple tweaks to boost your rankings—focusing on photos, reviews, and more. As an SEO specialist at Harmatia Local, I&apos;ve helped countless businesses skyrocket their visibility. Let&apos;s dive in.",
     author: "The SEO-Bedouin",
-    date: "Sep 23, 2025",
+    date: "Sep 23, 2025.",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000&auto=format&fit=crop",
     href: "/how-to-optimize-google-business-profile",
