@@ -86,7 +86,7 @@ export default function BlogRightSidebar() {
             Get the latest investment tips and strategies delivered to your inbox.
           </p>
         </div>
-        
+
         <form className="space-y-3">
           <input
             type="email"
@@ -101,7 +101,7 @@ export default function BlogRightSidebar() {
             Subscribe Now
           </button>
         </form>
-        
+
         <p className="text-xs text-neutral-500 text-center mt-3">
           No spam. Unsubscribe anytime.
         </p>
@@ -146,16 +146,16 @@ export default function BlogRightSidebar() {
         <h3 className="font-semibold text-neutral-900 mb-4">Share This Article</h3>
         <div className="space-y-3">
           <button className="w-full bg-blue-600 text-white py-2 px-3 rounded-md hover:bg-blue-700 transition-colors text-sm">
-            <i className="fab fa-facebook mr-2"></i>Facebook
+            <i className="fab fa-facebook mr-2" />Facebook
           </button>
           <button className="w-full bg-blue-400 text-white py-2 px-3 rounded-md hover:bg-blue-500 transition-colors text-sm">
-            <i className="fab fa-twitter mr-2"></i>Twitter
+            <i className="fab fa-twitter mr-2" />Twitter
           </button>
           <button className="w-full bg-blue-700 text-white py-2 px-3 rounded-md hover:bg-blue-800 transition-colors text-sm">
-            <i className="fab fa-linkedin mr-2"></i>LinkedIn
+            <i className="fab fa-linkedin mr-2" />LinkedIn
           </button>
           <button className="w-full bg-gray-600 text-white py-2 px-3 rounded-md hover:bg-gray-700 transition-colors text-sm">
-            <i className="fas fa-envelope mr-2"></i>Email
+            <i className="fas fa-envelope mr-2" />Email
           </button>
         </div>
       </motion.div>
