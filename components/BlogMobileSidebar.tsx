@@ -79,31 +79,28 @@ export default function BlogMobileSidebar() {
       <div className="flex border-b border-gray-200">
         <button
           onClick={() => setActiveTab("toc")}
-          className={`flex-1 py-3 px-4 text-sm font-medium ${
-            activeTab === "toc"
-              ? "text-blue-600 border-b-2 border-blue-600"
-              : "text-gray-600 hover:text-gray-900"
-          }`}
+          className={`flex-1 py-3 px-4 text-sm font-medium ${activeTab === "toc"
+            ? "text-blue-600 border-b-2 border-blue-600"
+            : "text-gray-600 hover:text-gray-900"
+            }`}
         >
           Table of Contents
         </button>
         <button
           onClick={() => setActiveTab("related")}
-          className={`flex-1 py-3 px-4 text-sm font-medium ${
-            activeTab === "related"
-              ? "text-blue-600 border-b-2 border-blue-600"
-              : "text-gray-600 hover:text-gray-900"
-          }`}
+          className={`flex-1 py-3 px-4 text-sm font-medium ${activeTab === "related"
+            ? "text-blue-600 border-b-2 border-blue-600"
+            : "text-gray-600 hover:text-gray-900"
+            }`}
         >
           Related Posts
         </button>
         <button
           onClick={() => setActiveTab("share")}
-          className={`flex-1 py-3 px-4 text-sm font-medium ${
-            activeTab === "share"
-              ? "text-blue-600 border-b-2 border-blue-600"
-              : "text-gray-600 hover:text-gray-900"
-          }`}
+          className={`flex-1 py-3 px-4 text-sm font-medium ${activeTab === "share"
+            ? "text-blue-600 border-b-2 border-blue-600"
+            : "text-gray-600 hover:text-gray-900"
+            }`}
         >
           Share
         </button>
@@ -122,17 +119,15 @@ export default function BlogMobileSidebar() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`block w-full text-left text-sm transition-all duration-200 ${
-                  activeSection === item.id
-                    ? "text-emerald-800 font-semibold bg-emerald-50 border-l-4 border-emerald-600 pl-4 py-2 -ml-2 rounded-r-md"
-                    : "text-neutral-600 hover:text-neutral-900 hover:bg-neutral-50 py-2 px-2 rounded-md"
-                } ${
-                  item.level === 1 
-                    ? "font-medium" 
-                    : item.level === 2 
-                    ? "ml-4" 
-                    : "ml-8"
-                }`}
+                className={`block w-full text-left text-sm transition-all duration-200 ${activeSection === item.id
+                  ? "text-emerald-800 font-semibold bg-emerald-50 border-l-4 border-emerald-600 pl-4 py-2 -ml-2 rounded-r-md"
+                  : "text-neutral-600 hover:text-neutral-900 hover:bg-neutral-50 py-2 px-2 rounded-md"
+                  } ${item.level === 1
+                    ? "font-medium"
+                    : item.level === 2
+                      ? "ml-4"
+                      : "ml-8"
+                  }`}
               >
                 {item.title}
               </button>
@@ -176,21 +171,21 @@ export default function BlogMobileSidebar() {
           >
             <div className="grid grid-cols-2 gap-3">
               <button className="flex items-center justify-center space-x-2 bg-blue-600 text-white py-2 px-3 rounded-md hover:bg-blue-700 transition-colors text-sm">
-                <i className="fab fa-facebook"></i>
+                <i className="fab fa-facebook" />
                 <span>Facebook</span>
               </button>
               <button className="flex items-center justify-center space-x-2 bg-blue-400 text-white py-2 px-3 rounded-md hover:bg-blue-500 transition-colors text-sm">
-                <i className="fab fa-twitter"></i>
+                <i className="fab fa-twitter" />
                 <span>Twitter</span>
               </button>
             </div>
             <div className="grid grid-cols-2 gap-3">
               <button className="flex items-center justify-center space-x-2 bg-blue-700 text-white py-2 px-3 rounded-md hover:bg-blue-800 transition-colors text-sm">
-                <i className="fab fa-linkedin"></i>
+                <i className="fab fa-linkedin" />
                 <span>LinkedIn</span>
               </button>
               <button className="flex items-center justify-center space-x-2 bg-gray-600 text-white py-2 px-3 rounded-md hover:bg-gray-700 transition-colors text-sm">
-                <i className="fas fa-envelope"></i>
+                <i className="fas fa-envelope" />
                 <span>Email</span>
               </button>
             </div>
