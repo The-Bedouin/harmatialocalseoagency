@@ -60,23 +60,21 @@ export default function BlogTOCSidebar() {
           <button
             key={item.id}
             onClick={() => scrollToSection(item.id)}
-            className={`block w-full text-left transition-all duration-200 ${
-              activeSection === item.id
+            className={`block w-full text-left transition-all duration-200 ${activeSection === item.id
                 ? "text-emerald-800 font-semibold bg-emerald-50 border-l-3 border-emerald-600 pl-3 py-1 -ml-1 rounded-r-md"
                 : "text-neutral-600 hover:text-neutral-900 hover:bg-neutral-50 py-1 px-1 rounded-md"
-            } ${
-              item.level === 1 
-                ? "text-sm font-medium" 
-                : item.level === 2 
-                ? "text-xs ml-3" 
-                : "text-xs ml-6"
-            }`}
+              } ${item.level === 1
+                ? "text-sm font-medium"
+                : item.level === 2
+                  ? "text-xs ml-3"
+                  : "text-xs ml-6"
+              }`}
           >
             {item.title}
           </button>
         ))}
       </nav>
-      
+
       {/* Progress indicator */}
       <div className="mt-4 pt-3 border-t border-black/5">
         <div className="flex items-center justify-between text-xs text-neutral-500 mb-1">
@@ -84,12 +82,12 @@ export default function BlogTOCSidebar() {
           <span>{Math.round((tableOfContents.findIndex(item => item.id === activeSection) + 1) / tableOfContents.length * 100)}%</span>
         </div>
         <div className="w-full bg-neutral-200 rounded-full h-1.5">
-          <div 
+          <div
             className="bg-emerald-600 h-1.5 rounded-full transition-all duration-300"
-            style={{ 
-              width: `${(tableOfContents.findIndex(item => item.id === activeSection) + 1) / tableOfContents.length * 100}%` 
+            style={{
+              width: `${(tableOfContents.findIndex(item => item.id === activeSection) + 1) / tableOfContents.length * 100}%`
             }}
-          ></div>
+          />
         </div>
       </div>
     </motion.div>

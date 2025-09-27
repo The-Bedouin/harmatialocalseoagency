@@ -22,7 +22,7 @@ export default function CallToAction() {
               </Link>
             </div>
           </div>
-          <div className="pointer-events-none absolute -right-8 -top-8 h-40 w-40 rounded-full bg-[radial-gradient(rgba(0,0,0,0.06),transparent_60%)]"></div>
+          <div className="pointer-events-none absolute -right-8 -top-8 h-40 w-40 rounded-full bg-[radial-gradient(rgba(0,0,0,0.06),transparent_60%)]" />
         </div>
       </div>
     </section>

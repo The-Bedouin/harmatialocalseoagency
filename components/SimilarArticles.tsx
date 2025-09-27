@@ -106,7 +106,7 @@ function SimilarArticleCard({ post }: { post: BlogPost }) {
       transition={{ duration: 0.5 }}
       className="relative animate-float"
     >
-      <div className="absolute inset-0 bg-white rounded-2xl scale-[1.02] shadow-[0_8px_24px_-10px_rgba(0,0,0,0.18)] animate-shadow-float"></div>
+      <div className="absolute inset-0 bg-white rounded-2xl scale-[1.02] shadow-[0_8px_24px_-10px_rgba(0,0,0,0.18)] animate-shadow-float" />
 
       <Link
         href={post.href || "#"}
@@ -125,13 +125,13 @@ function SimilarArticleCard({ post }: { post: BlogPost }) {
 
           <h3
             className="mt-3 text-[18px] sm:text-[20px] font-medium leading-[1.2] tracking-tight text-neutral-900 transition-colors duration-300 group-hover:text-emerald-600"
-            style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(28, 28, 28)'}}
+            style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(28, 28, 28)' }}
           >
             {post.title}
           </h3>
 
           <p className="mt-3 text-[14px] sm:text-[15px] leading-[1.5] text-neutral-600"
-             style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(110, 110, 110)'}}>
+            style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(110, 110, 110)' }}>
             {post.excerpt}
           </p>
 
@@ -147,7 +147,7 @@ function SimilarArticleCard({ post }: { post: BlogPost }) {
           </div>
         </div>
 
-        <div className="pointer-events-none absolute inset-0 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.4)] opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out"></div>
+        <div className="pointer-events-none absolute inset-0 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.4)] opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out" />
       </Link>
     </motion.div>
   );
@@ -178,7 +178,7 @@ export default function SimilarArticles() {
             Continue your local SEO journey with these related guides and strategies to help your business dominate local search results.
           </p>
         </motion.div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {related.map((post, index) => (
             <motion.div
