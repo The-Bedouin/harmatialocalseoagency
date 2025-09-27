@@ -5,8 +5,8 @@ import Projects from "@/components/Projects";
 import Mission from "@/components/Mission";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
-import CTA from "@/components/CTA";
-import FAQ from "@/components/FAQ";
+import Cta from "@/components/Cta";
+import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -18,8 +18,8 @@ export default function Home() {
       <Mission />
       <Services />
       <Testimonials />
-      <CTA />
-      <FAQ />
+      <Cta />
+      <Faq />
       <FloatingBadges />
       <Footer />
     </div>

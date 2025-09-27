@@ -8,7 +8,7 @@ export default function BlogHeroGoogleAds() {
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(16,185,129,0.1),transparent_50%)]"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(59,130,246,0.1),transparent_50%)]"></div>
-      
+
       <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,7 @@ export default function BlogHeroGoogleAds() {
           </div>
 
           {/* Main Headline */}
-          <h1 
+          <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-neutral-900 mb-6"
             style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}
           >
@@ -35,7 +35,7 @@ export default function BlogHeroGoogleAds() {
           </h1>
 
           {/* Subtitle */}
-          <p 
+          <p
             className="text-lg sm:text-xl leading-relaxed text-neutral-600 max-w-3xl mx-auto mb-8"
             style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}
           >
@@ -56,7 +56,7 @@ export default function BlogHeroGoogleAds() {
             <span>6 min read</span>
           </div>
 
-          {/* CTA Buttons */}
+          {/* Cta Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
               href="https://calendly.com/harmatia/30min"

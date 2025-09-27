@@ -326,14 +326,12 @@ Published on September 24, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className={`mb-8 ${
-              section.level === 1 ? "border-b border-gray-200 pb-8" : ""
-            }`}
+            className={`mb-8 ${section.level === 1 ? "border-b border-gray-200 pb-8" : ""
+              }`}
           >
             {section.type === "section" && (
-              <h2 className={`open-runde-500 font-bold text-neutral-900 mb-4 ${
-                section.level === 1 ? "text-3xl" : section.level === 2 ? "text-2xl" : "text-xl"
-              }`}>
+              <h2 className={`open-runde-500 font-bold text-neutral-900 mb-4 ${section.level === 1 ? "text-3xl" : section.level === 2 ? "text-2xl" : "text-xl"
+                }`}>
                 {section.title}
               </h2>
             )}
@@ -345,7 +343,7 @@ Published on September 24, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
             <div className="open-runde-400-paragraph text-neutral-700 leading-relaxed whitespace-pre-line">
               {section.content}
             </div>
-            
+
             {/* Add relevant images for specific sections */}
             {section.id === "why-speed-matters" && (
               <div className="mt-6">
@@ -361,7 +359,7 @@ Published on September 24, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
                 </p>
               </div>
             )}
-            
+
             {section.id === "step-1-check-speed" && (
               <div className="mt-6">
                 <Image
@@ -376,7 +374,7 @@ Published on September 24, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
                 </p>
               </div>
             )}
-            
+
             {section.id === "step-2-compress-images" && (
               <div className="mt-6">
                 <Image
@@ -409,9 +407,8 @@ Published on September 24, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
             <button
               key={star}
               onClick={() => setHelpfulRating(star)}
-              className={`text-2xl transition-colors ${
-                star <= helpfulRating ? "text-yellow-400" : "text-gray-300"
-              } hover:text-yellow-400`}
+              className={`text-2xl transition-colors ${star <= helpfulRating ? "text-yellow-400" : "text-gray-300"
+                } hover:text-yellow-400`}
             >
               ★
             </button>
@@ -422,7 +419,7 @@ Published on September 24, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
         </p>
       </motion.div>
 
-      {/* CTA Section */}
+      {/* Cta Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

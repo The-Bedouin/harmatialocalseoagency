@@ -1,4 +1,3 @@
-// @ts-nocheck
 "use client";
 
 import React from "react";
@@ -111,7 +110,7 @@ function CategoryAndMeta({ category, readTime }: { category: string; readTime: s
 function BlogCard({ post }: { post: BlogPost }) {
   return (
     <div className="relative animate-float">
-      <div className="absolute inset-0 bg-white rounded-2xl scale-[1.02] shadow-[0_8px_24px_-10px_rgba(0,0,0,0.18)] animate-shadow-float"></div>
+      <div className="absolute inset-0 bg-white rounded-2xl scale-[1.02] shadow-[0_8px_24px_-10px_rgba(0,0,0,0.18)] animate-shadow-float" />
 
       <Link
         href={post.href || "#"}
@@ -152,7 +151,7 @@ function BlogCard({ post }: { post: BlogPost }) {
           </div>
         </div>
 
-        <div className="pointer-events-none absolute inset-0 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.4)] opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out"></div>
+        <div className="pointer-events-none absolute inset-0 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.4)] opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out" />
       </Link>
     </div>
   );

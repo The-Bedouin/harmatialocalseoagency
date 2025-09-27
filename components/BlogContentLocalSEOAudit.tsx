@@ -59,7 +59,7 @@ export default function BlogContentLocalSEOAudit() {
       content: `Empower yourself with this quick checklist:\n\nEssential Local SEO Audit Steps:\n• Claim and verify your Google Business Profile\n• Request and respond to at least 10 customer reviews\n• Ensure NAP consistency across all platforms\n• Test and improve website speed (aim for under 3 seconds)\n• Add 5-10 local keywords to your website content\n• Update GBP with photos and weekly posts\n\nMonthly Maintenance Tasks:\n• Check for new review opportunities\n• Update business hours and special offers\n• Post fresh content to your Google Business Profile\n• Monitor your local search rankings\n• Check for new citation opportunities\n• Respond to customer questions and reviews\n\nRun this checklist monthly to stay on track. Need a deeper dive? A professional audit can uncover more.\n\nPro Tip: Set up Google Alerts for your business name to monitor mentions and catch any negative reviews quickly.`
     },
     {
-      id: "free-audit-cta",
+      id: "free-audit-Cta",
       type: "section",
       title: "Unlock Hidden Opportunities with a Free Audit",
       level: 2,
@@ -79,14 +79,12 @@ export default function BlogContentLocalSEOAudit() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className={`mb-8 ${
-              section.level === 1 ? "border-b border-gray-200 pb-8" : ""
-            }`}
+            className={`mb-8 ${section.level === 1 ? "border-b border-gray-200 pb-8" : ""
+              }`}
           >
             {section.type === "section" && (
-              <h2 className={`open-runde-500 font-bold text-neutral-900 mb-4 ${
-                section.level === 1 ? "text-3xl" : section.level === 2 ? "text-2xl" : "text-xl"
-              }`}>
+              <h2 className={`open-runde-500 font-bold text-neutral-900 mb-4 ${section.level === 1 ? "text-3xl" : section.level === 2 ? "text-2xl" : "text-xl"
+                }`}>
                 {section.title}
               </h2>
             )}
@@ -127,9 +125,8 @@ export default function BlogContentLocalSEOAudit() {
             <button
               key={star}
               onClick={() => setHelpfulRating(star)}
-              className={`text-2xl transition-colors ${
-                star <= helpfulRating ? "text-yellow-400" : "text-gray-300"
-              } hover:text-yellow-400`}
+              className={`text-2xl transition-colors ${star <= helpfulRating ? "text-yellow-400" : "text-gray-300"
+                } hover:text-yellow-400`}
             >
               ★
             </button>
@@ -140,7 +137,7 @@ export default function BlogContentLocalSEOAudit() {
         </p>
       </motion.div>
 
-      {/* CTA Section */}
+      {/* Cta Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

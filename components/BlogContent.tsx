@@ -458,7 +458,7 @@ Multi-Location SEO:
 Local Voice Search Optimization:
 - Optimize for conversational queries
 - Use natural language in content
-- Include FAQ sections with voice-friendly answers
+- Include Faq sections with voice-friendly answers
 - Optimize for "near me" searches
 
 Seasonal Local SEO:
@@ -509,14 +509,12 @@ For businesses looking to accelerate their local SEO success, consider working w
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className={`mb-8 ${
-              section.level === 1 ? "border-b border-gray-200 pb-8" : ""
-            }`}
+            className={`mb-8 ${section.level === 1 ? "border-b border-gray-200 pb-8" : ""
+              }`}
           >
             {section.type === "section" && (
-              <h2 className={`open-runde-500 font-bold text-neutral-900 mb-4 ${
-                section.level === 1 ? "text-3xl" : section.level === 2 ? "text-2xl" : "text-xl"
-              }`}>
+              <h2 className={`open-runde-500 font-bold text-neutral-900 mb-4 ${section.level === 1 ? "text-3xl" : section.level === 2 ? "text-2xl" : "text-xl"
+                }`}>
                 {section.title}
               </h2>
             )}
@@ -528,7 +526,7 @@ For businesses looking to accelerate their local SEO success, consider working w
             <div className="open-runde-400-paragraph text-neutral-700 leading-relaxed whitespace-pre-line">
               {section.content}
             </div>
-            
+
             {/* Add relevant images for specific sections */}
             {section.id === "what-is-local-seo" && (
               <div className="mt-6">
@@ -544,7 +542,7 @@ For businesses looking to accelerate their local SEO success, consider working w
                 </p>
               </div>
             )}
-            
+
             {section.id === "google-business-profile" && (
               <div className="mt-6">
                 <Image
@@ -559,7 +557,7 @@ For businesses looking to accelerate their local SEO success, consider working w
                 </p>
               </div>
             )}
-            
+
             {section.id === "nap-citations" && (
               <div className="mt-6">
                 <Image
@@ -574,7 +572,7 @@ For businesses looking to accelerate their local SEO success, consider working w
                 </p>
               </div>
             )}
-            
+
             {section.id === "local-content-strategy" && (
               <div className="mt-6">
                 <Image
@@ -589,7 +587,7 @@ For businesses looking to accelerate their local SEO success, consider working w
                 </p>
               </div>
             )}
-            
+
             {section.id === "customer-reviews" && (
               <div className="mt-6">
                 <Image
@@ -604,7 +602,7 @@ For businesses looking to accelerate their local SEO success, consider working w
                 </p>
               </div>
             )}
-            
+
             {section.id === "local-link-building" && (
               <div className="mt-6">
                 <Image
@@ -619,7 +617,7 @@ For businesses looking to accelerate their local SEO success, consider working w
                 </p>
               </div>
             )}
-            
+
             {section.id === "technical-local-seo" && (
               <div className="mt-6">
                 <Image
@@ -634,7 +632,7 @@ For businesses looking to accelerate their local SEO success, consider working w
                 </p>
               </div>
             )}
-            
+
             {section.id === "measuring-success" && (
               <div className="mt-6">
                 <Image
@@ -668,9 +666,8 @@ For businesses looking to accelerate their local SEO success, consider working w
             <button
               key={star}
               onClick={() => setHelpfulRating(star)}
-              className={`text-2xl transition-colors ${
-                star <= helpfulRating ? "text-yellow-400" : "text-gray-300"
-              } hover:text-yellow-400`}
+              className={`text-2xl transition-colors ${star <= helpfulRating ? "text-yellow-400" : "text-gray-300"
+                } hover:text-yellow-400`}
             >
               ★
             </button>
@@ -681,7 +678,7 @@ For businesses looking to accelerate their local SEO success, consider working w
         </p>
       </motion.div>
 
-      {/* CTA Section */}
+      {/* Cta Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

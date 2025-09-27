@@ -111,13 +111,13 @@ Why People Also Ask Works for Local SEO:
 • Real User Intent: Questions reflect what customers actually want to know
 • Featured Snippet Opportunities: Answering these questions can get you featured snippets
 • Long-tail Keywords: PAA questions often contain valuable long-tail keywords
-• Content Ideas: Perfect for creating FAQ pages and blog content
+• Content Ideas: Perfect for creating Faq pages and blog content
 • Local Relevance: Questions often include location-specific terms
 
 Pro Tips for Better PAA Research:
 • Click through multiple levels of questions to find more specific queries
 • Use these questions as headings in your content
-• Create FAQ pages based on common PAA questions
+• Create Faq pages based on common PAA questions
 • Monitor PAA questions regularly as they change over time
 • Combine PAA questions with your main keywords for better targeting
 • Use PAA questions in your Google Business Profile Q&A section`
@@ -175,14 +175,12 @@ Published on September 23, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className={`mb-8 ${
-              section.level === 1 ? "border-b border-gray-200 pb-8" : ""
-            }`}
+            className={`mb-8 ${section.level === 1 ? "border-b border-gray-200 pb-8" : ""
+              }`}
           >
             {section.type === "section" && (
-              <h2 className={`open-runde-500 font-bold text-neutral-900 mb-4 ${
-                section.level === 1 ? "text-3xl" : section.level === 2 ? "text-2xl" : "text-xl"
-              }`}>
+              <h2 className={`open-runde-500 font-bold text-neutral-900 mb-4 ${section.level === 1 ? "text-3xl" : section.level === 2 ? "text-2xl" : "text-xl"
+                }`}>
                 {section.title}
               </h2>
             )}
@@ -194,7 +192,7 @@ Published on September 23, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
             <div className="open-runde-400-paragraph text-neutral-700 leading-relaxed whitespace-pre-line">
               {section.content}
             </div>
-            
+
             {/* Add relevant images for specific sections */}
             {section.id === "why-local-keyword-research" && (
               <div className="mt-6">
@@ -210,7 +208,7 @@ Published on September 23, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
                 </p>
               </div>
             )}
-            
+
             {section.id === "tool-1-google-keyword-planner" && (
               <div className="mt-6">
                 <Image
@@ -225,7 +223,7 @@ Published on September 23, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
                 </p>
               </div>
             )}
-            
+
             {section.id === "tool-2-people-also-ask" && (
               <div className="mt-6">
                 <Image
@@ -258,9 +256,8 @@ Published on September 23, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
             <button
               key={star}
               onClick={() => setHelpfulRating(star)}
-              className={`text-2xl transition-colors ${
-                star <= helpfulRating ? "text-yellow-400" : "text-gray-300"
-              } hover:text-yellow-400`}
+              className={`text-2xl transition-colors ${star <= helpfulRating ? "text-yellow-400" : "text-gray-300"
+                } hover:text-yellow-400`}
             >
               ★
             </button>
@@ -271,7 +268,7 @@ Published on September 23, 2025 by The SEO-Bedouin, SEO Specialist at Harmatia L
         </p>
       </motion.div>
 
-      {/* CTA Section */}
+      {/* Cta Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

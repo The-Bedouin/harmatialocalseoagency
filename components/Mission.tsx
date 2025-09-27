@@ -104,12 +104,12 @@ export default function Mission() {
             <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1 text-[10px] uppercase tracking-wide text-neutral-600">
               mission
             </div>
-            <h2 className="mt-4 text-[44px] leading-[46px] font-medium text-[rgb(110,110,110)]" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>Our focus is simple</h2>
-            <h3 className="text-[44px] leading-[46px] font-medium text-[rgb(28,28,28)]" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>Design to convert</h3>
+            <h2 className="mt-4 text-[44px] leading-[46px] font-medium text-[rgb(110,110,110)]" style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>Our focus is simple</h2>
+            <h3 className="text-[44px] leading-[46px] font-medium text-[rgb(28,28,28)]" style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>Design to convert</h3>
           </div>
           <div className="lg:col-span-5">
-            <p className="text-[18px] leading-[29px] font-normal text-[rgb(110,110,110)] max-w-sm" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>
-              We promise to deliver beyond your expectations for your business.
+            <p className="text-[18px] leading-[29px] font-normal text-[rgb(110,110,110)] max-w-sm" style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>
+              We promise to deliver beyond your expeCtations for your business.
             </p>
           </div>
         </div>

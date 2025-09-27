@@ -8,7 +8,7 @@ type FaqItem = {
   answer: string;
 };
 
-const FAQ_ITEMS: FaqItem[] = [
+const Faq_ITEMS: FaqItem[] = [
   {
     question: "What services do you offer?",
     answer:
@@ -27,7 +27,7 @@ const FAQ_ITEMS: FaqItem[] = [
   {
     question: "What are your pricing options?",
     answer:
-      "We offer flexible packages tailored to your goals and market. After a quick discovery call, we’ll recommend the best plan for your budget and timeline.",
+      "We offer flexible packages tailored to your goals and market. After a quick discovery call, we'll recommend the best plan for your budget and timeline.",
   },
   {
     question: "Do you work with my industry?",
@@ -41,7 +41,7 @@ const FAQ_ITEMS: FaqItem[] = [
   },
 ];
 
-export default function FAQ() {
+export default function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggle = (index: number) => {
@@ -49,12 +49,12 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="relative py-8 sm:py-10 lg:py-12">
+    <section id="Faq" className="relative py-8 sm:py-10 lg:py-12">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div className="lg:col-span-7">
             <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1 text-[10px] uppercase tracking-wide text-neutral-600">
-              faq
+              Faq
             </div>
             <h2
               className="mt-4 text-[44px] leading-[46px] font-medium text-[rgb(110,110,110)]"
@@ -80,7 +80,7 @@ export default function FAQ() {
         </div>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
-          {FAQ_ITEMS.map((item, index) => {
+          {Faq_ITEMS.map((item, index) => {
             const isOpen = openIndex === index;
             return (
               <div
@@ -91,16 +91,15 @@ export default function FAQ() {
                   type="button"
                   className="w-full text-left px-5 sm:px-6 py-4 sm:py-5 flex items-center justify-between gap-4"
                   aria-expanded={isOpen}
-                  aria-controls={`faq-panel-${index}`}
+                  aria-controls={`Faq-panel-${index}`}
                   onClick={() => toggle(index)}
                 >
                   <span className="text-base sm:text-lg font-medium text-neutral-900">
                     {item.question}
                   </span>
                   <span
-                    className={`inline-flex h-9 w-9 items-center justify-center rounded-lg border border-black/10 bg-white transition-transform ${
-                      isOpen ? "rotate-180" : "rotate-0"
-                    }`}
+                    className={`inline-flex h-9 w-9 items-center justify-center rounded-lg border border-black/10 bg-white transition-transform ${isOpen ? "rotate-180" : "rotate-0"
+                      }`}
                     aria-hidden
                   >
                     <svg
@@ -121,7 +120,7 @@ export default function FAQ() {
                 <AnimatePresence initial={false}>
                   {isOpen && (
                     <motion.div
-                      id={`faq-panel-${index}`}
+                      id={`Faq-panel-${index}`}
                       key="content"
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
@@ -142,5 +141,3 @@ export default function FAQ() {
     </section>
   );
 }
-
-

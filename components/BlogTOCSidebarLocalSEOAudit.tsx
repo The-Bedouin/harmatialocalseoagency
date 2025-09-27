@@ -15,7 +15,7 @@ export default function BlogTOCSidebarLocalSEOAudit() {
     { id: "mistake-4-website-speed", title: "Mistake 4: Overlooking Website Speed", level: 2 },
     { id: "mistake-5-local-keywords", title: "Mistake 5: Missing Local Keywords", level: 2 },
     { id: "diy-checklist", title: "DIY Local SEO Audit Checklist", level: 2 },
-    { id: "free-audit-cta", title: "Free Audit CTA", level: 1 }
+    { id: "free-audit-Cta", title: "Free Audit Cta", level: 1 }
   ], []);
 
   useEffect(() => {
@@ -63,26 +63,24 @@ export default function BlogTOCSidebarLocalSEOAudit() {
             <span>{Math.round(scrollProgress)}%</span>
           </div>
           <div className="w-full bg-neutral-200 rounded-full h-1.5">
-            <div 
+            <div
               className="bg-emerald-500 h-1.5 rounded-full transition-all duration-300 ease-out"
               style={{ width: `${scrollProgress}%` }}
             />
           </div>
         </div>
-        
+
         <h3 className="text-lg font-semibold text-neutral-900 mb-4">Table of Contents</h3>
         <nav className="space-y-1">
           {tocItems.map((item) => (
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`block w-full text-left px-3 py-2 rounded-lg text-sm transition-all duration-200 ${
-                activeSection === item.id
+              className={`block w-full text-left px-3 py-2 rounded-lg text-sm transition-all duration-200 ${activeSection === item.id
                   ? "bg-emerald-100 text-emerald-700 font-medium border-l-4 border-emerald-500"
                   : "text-neutral-600 hover:text-neutral-900 hover:bg-neutral-50 border-l-4 border-transparent"
-              } ${
-                item.level === 1 ? "font-semibold" : item.level === 2 ? "ml-4" : "ml-8"
-              }`}
+                } ${item.level === 1 ? "font-semibold" : item.level === 2 ? "ml-4" : "ml-8"
+                }`}
             >
               <span className="block truncate">{item.title}</span>
             </button>

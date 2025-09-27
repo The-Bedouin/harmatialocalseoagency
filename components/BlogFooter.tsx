@@ -10,7 +10,7 @@ export default function BlogFooter() {
     { label: "Services", href: "/#services" },
     { label: "Portfolio", href: "/#projects" },
     { label: "Testimonials", href: "#" },
-    { label: "FAQ", href: "#" },
+    { label: "Faq", href: "#" },
     { label: "Contact", href: "/contact" },
   ];
 

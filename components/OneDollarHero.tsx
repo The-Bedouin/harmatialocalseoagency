@@ -50,16 +50,16 @@ export default function OneDollarHero() {
             <span className="mx-2 text-neutral-300">•</span>
             <span className="text-neutral-500">Complete Guide</span>
           </div>
-          
+
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-neutral-900 mb-6"
-              style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>
+            style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>
             Master Local SEO with Our
             <span className="block text-emerald-600">Proven Strategies</span>
           </h1>
-          
+
           <p className="text-lg sm:text-xl leading-relaxed text-neutral-600 max-w-3xl mx-auto"
-             style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>
-            Dominate local search results with our comprehensive approach covering Google Business Profile optimization, 
+            style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>
+            Dominate local search results with our comprehensive approach covering Google Business Profile optimization,
             NAP citations, local content strategy, and advanced techniques to attract more customers.
           </p>
         </div>
@@ -85,30 +85,30 @@ export default function OneDollarHero() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              
+
               {/* Content */}
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-neutral-900 mb-2 group-hover:text-emerald-600 transition-colors"
-                    style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>
+                  style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>
                   {card.title}
                 </h3>
                 <p className="text-sm text-neutral-600 leading-relaxed"
-                   style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>
+                  style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>
                   {card.description}
                 </p>
                 {/* Debug info */}
                 <p className="text-xs text-gray-400 mt-2">Image: {card.image}</p>
               </div>
-              
+
               {/* Hover Effect Overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.div>
           ))}
         </div>
 
-        {/* CTA Section */}
+        {/* Cta Section */}
         <div className="text-center mt-12">
-          <motion.a 
+          <motion.a
             href="https://calendly.com/harmatia/30min"
             target="_blank"
             className="inline-flex items-center gap-3 bg-emerald-600 text-white px-8 py-4 rounded-xl hover:bg-emerald-700 transition-colors text-lg font-semibold shadow-lg hover:shadow-xl"

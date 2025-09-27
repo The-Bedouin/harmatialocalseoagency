@@ -138,7 +138,7 @@ export default function BlogContentGoogleAds() {
         </p>
       </motion.div>
 
-      {/* CTA Section */}
+      {/* Cta Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

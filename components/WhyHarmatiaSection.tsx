@@ -14,12 +14,12 @@ export default function WhyHarmatiaSection() {
             viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="text-neutral-900 font-medium tracking-tight text-[44px] leading-[46px]"
-            style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(28, 28, 28)'}}
+            style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(28, 28, 28)' }}
           >
             Why Harmatia Local
           </motion.h2>
 
-          {/* Right: paragraph + CTA button */}
+          {/* Right: paragraph + Cta button */}
           <div className="flex flex-col gap-4 md:gap-6">
             <motion.p
               initial={{ opacity: 0, y: 12 }}
@@ -27,7 +27,7 @@ export default function WhyHarmatiaSection() {
               viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
               className="text-neutral-600 text-[18px] leading-[29px]"
-              style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(110, 110, 110)'}}
+              style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(110, 110, 110)' }}
             >
               We&apos;re not just another SEO agency. We&apos;re your local business growth partners who understand the unique challenges of competing in today&apos;s digital landscape. Our proven strategies have helped hundreds of local businesses dominate their markets and achieve sustainable growth.
             </motion.p>

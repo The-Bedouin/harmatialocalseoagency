@@ -116,7 +116,7 @@ export default function HowToOptimizeGoogleBusinessProfile() {
       {
         "@type": "HowToStep",
         "name": "Post Regular Updates and Offers",
-        "text": "Share weekly posts with CTAs to keep your profile active.",
+        "text": "Share weekly posts with Ctas to keep your profile active.",
         "url": "https://www.harmatialocal.com/blog/how-to-optimize-google-business-profile-for-local-searches#step-5-posts"
       }
     ],
@@ -164,38 +164,38 @@ export default function HowToOptimizeGoogleBusinessProfile() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <div className="min-h-screen bg-white">
-      <BlogHeader />
-      <BlogHeroGoogleBusinessProfile />
-      
-      {/* Three-Column Layout */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          {/* Left Sidebar - Table of Contents */}
-          <div className="hidden lg:block lg:col-span-2">
-            <BlogTOCSidebarGoogleBusinessProfile />
-          </div>
-          
-          {/* Main Content */}
-          <div className="lg:col-span-7">
-            <BlogContentGoogleBusinessProfile />
-          </div>
-          
-          {/* Right Sidebar - Related Posts & Ads */}
-          <div className="hidden lg:block lg:col-span-3">
-            <div className="sticky top-8">
-              <BlogRightSidebar />
+        <BlogHeader />
+        <BlogHeroGoogleBusinessProfile />
+
+        {/* Three-Column Layout */}
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            {/* Left Sidebar - Table of Contents */}
+            <div className="hidden lg:block lg:col-span-2">
+              <BlogTOCSidebarGoogleBusinessProfile />
+            </div>
+
+            {/* Main Content */}
+            <div className="lg:col-span-7">
+              <BlogContentGoogleBusinessProfile />
+            </div>
+
+            {/* Right Sidebar - Related Posts & Ads */}
+            <div className="hidden lg:block lg:col-span-3">
+              <div className="sticky top-8">
+                <BlogRightSidebar />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      
-      {/* Mobile Sidebar */}
-      <BlogMobileSidebar />
-      
-      {/* Similar Articles Section - Full Width */}
-      <SimilarArticles />
-      
-      <BlogFooter />
+
+        {/* Mobile Sidebar */}
+        <BlogMobileSidebar />
+
+        {/* Similar Articles Section - Full Width */}
+        <SimilarArticles />
+
+        <BlogFooter />
       </div>
     </>
   );
