@@ -1,4 +1,3 @@
-// @ts-nocheck
 "use client";
 
 import { motion } from "framer-motion";
@@ -153,6 +152,7 @@ export default function BlogContentGoogleAds() {
         <a
           href="https://calendly.com/harmatia/30min"
           target="_blank"
+          rel="noreferrer"
           className="inline-flex items-center gap-2 bg-white text-emerald-600 px-8 py-3 rounded-xl font-semibold hover:bg-neutral-50 transition-colors shadow-lg"
         >
           Book Free SEO Consultation

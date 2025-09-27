@@ -18,7 +18,7 @@ export default function BlogHeroGoogleAds() {
         >
           {/* Category Badge */}
           <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-medium text-emerald-700 mb-6">
-            <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
+            <span className="w-2 h-2 bg-emerald-500 rounded-full" />
             Local SEO
           </div>
 

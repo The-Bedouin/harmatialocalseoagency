@@ -94,7 +94,7 @@ export default function BlogHeader() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
                     </button>
-                    
+
                     {/* Modern Dropdown Menu */}
                     <div className={`absolute top-full left-0 mt-3 w-40 bg-white/95 backdrop-blur-xl rounded-xl shadow-2xl border border-white/20 py-3 transition-all duration-300 ease-out ${isResourcesOpen ? 'opacity-100 visible translate-y-0 scale-100' : 'opacity-0 invisible -translate-y-3 scale-95'}`}>
                       <div className="px-1">
@@ -127,6 +127,7 @@ export default function BlogHeader() {
           <a
             href="https://calendly.com/harmatia/30min"
             target="_blank"
+            rel="noreferrer"
             className="btn-green btn-green-md"
           >
             Book a call
@@ -138,6 +139,7 @@ export default function BlogHeader() {
           <a
             href="https://calendly.com/ramish-design"
             target="_blank"
+            rel="noreferrer"
             className="btn-green btn-green-sm hidden xs:inline-flex"
           >
             Call
@@ -202,7 +204,7 @@ export default function BlogHeader() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
                     </button>
-                    
+
                     {/* Modern Mobile Dropdown */}
                     <div className={`ml-4 mt-2 bg-white/90 backdrop-blur-sm rounded-lg border border-white/20 transition-all duration-300 ease-out ${isResourcesOpen ? 'max-h-32 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                       <div className="py-2">
@@ -239,6 +241,7 @@ export default function BlogHeader() {
             <a
               href="https://calendly.com/harmatia/30min"
               target="_blank"
+              rel="noreferrer"
               className="btn-green btn-green-md mt-1"
             >
               Book a call

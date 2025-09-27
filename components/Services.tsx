@@ -264,18 +264,18 @@ export default function Services() {
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] uppercase tracking-wide text-neutral-300">
               services
             </div>
-             <h2
-               className="mt-4 text-[44px] leading-[46px] font-medium"
-               style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(110, 110, 110)' }}
-             >
-               How can we help
-             </h2>
-             <h3
-               className="text-[44px] leading-[46px] font-medium"
-               style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(255, 255, 255)' }}
-             >
-               Your business grow
-             </h3>
+            <h2
+              className="mt-4 text-[44px] leading-[46px] font-medium"
+              style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(110, 110, 110)' }}
+            >
+              How can we help
+            </h2>
+            <h3
+              className="text-[44px] leading-[46px] font-medium"
+              style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(255, 255, 255)' }}
+            >
+              Your business grow
+            </h3>
           </div>
           <div className="lg:col-span-5">
             <p
@@ -311,7 +311,7 @@ export default function Services() {
         strength={2}
         divCount={5}
         curve="bezier"
-        exponential={true}
+        exponential
         opacity={1}
       />
     </section>

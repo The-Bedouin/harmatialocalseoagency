@@ -14,7 +14,7 @@ export default function CallToAction() {
               <p className="mt-1 text-[16px] leading-[26px] text-[rgb(110,110,110)] max-w-xl" style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>Book a free SEO audit and get an actionable plan for more calls, visits, and reviews.</p>
             </div>
             <div className="flex shrink-0 gap-3">
-              <a href="https://calendly.com/harmatia/30min" target="_blank" className="btn-green btn-green-lg">
+              <a href="https://calendly.com/harmatia/30min" target="_blank" rel="noreferrer" className="btn-green btn-green-lg">
                 Book free audit
               </a>
               <Link href="/#projects" className="btn-outline">

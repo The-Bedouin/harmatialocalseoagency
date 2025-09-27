@@ -112,7 +112,7 @@ export default function FrequentlyAskedQuestions() {
                       strokeLinejoin="round"
                       className="h-4 w-4 text-neutral-900"
                     >
-                      <polyline points="6 9 12 15 18 9"></polyline>
+                      <polyline points="6 9 12 15 18 9" />
                     </svg>
                   </span>
                 </button>

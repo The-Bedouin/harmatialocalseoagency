@@ -64,10 +64,10 @@ const projects: Project[] = [
 
 function ProjectCard({ project, tall, aspect }: { project: Project; tall?: boolean; aspect?: string }) {
   return (
-    <div className={"relative"}>
+    <div className="relative">
       {/* White underlay - slightly larger than the card */}
-      <div className="absolute inset-0 bg-white rounded-2xl scale-[1.02] shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)]"></div>
-      
+      <div className="absolute inset-0 bg-white rounded-2xl scale-[1.02] shadow-[0_8px_20px_-8px_rgba(0,0,0,0.15)]" />
+
       {/* Main card container */}
       <div className="relative rounded-2xl bg-white">
         <a
@@ -77,9 +77,7 @@ function ProjectCard({ project, tall, aspect }: { project: Project; tall?: boole
           }
         >
           <div
-            className={
-              "absolute left-1/2 top-1/2 h-[95%] w-[95%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-2xl border-2 border-white ring-1 ring-black/5 bg-neutral-900 shadow-[0_18px_30px_-12px_rgba(0,0,0,0.35),0_10px_18px_rgba(0,0,0,0.18)] hover:shadow-[0_26px_44px_-14px_rgba(0,0,0,0.4),0_14px_24px_rgba(0,0,0,0.2)] transition-shadow duration-300"
-            }
+            className="absolute left-1/2 top-1/2 h-[95%] w-[95%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-2xl border-2 border-white ring-1 ring-black/5 bg-neutral-900 shadow-[0_18px_30px_-12px_rgba(0,0,0,0.35),0_10px_18px_rgba(0,0,0,0.18)] hover:shadow-[0_26px_44px_-14px_rgba(0,0,0,0.4),0_14px_24px_rgba(0,0,0,0.2)] transition-shadow duration-300"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -126,11 +124,11 @@ export default function Projects() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div className="lg:col-span-7">
             <p className="text-xs uppercase tracking-wide text-neutral-400">projects</p>
-            <h2 className="text-[44px] leading-[46px] font-medium text-[rgb(110,110,110)]" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>Proven results</h2>
-            <h3 className="text-[44px] leading-[46px] font-medium text-[rgb(28,28,28)]" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>Global impact</h3>
+            <h2 className="text-[44px] leading-[46px] font-medium text-[rgb(110,110,110)]" style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>Proven results</h2>
+            <h3 className="text-[44px] leading-[46px] font-medium text-[rgb(28,28,28)]" style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>Global impact</h3>
           </div>
           <div className="lg:col-span-5">
-            <p className="text-[18px] leading-[29px] font-normal text-[rgb(110,110,110)] max-w-sm" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>Helping businesses attract, convert, and grow on autopilot.</p>
+            <p className="text-[18px] leading-[29px] font-normal text-[rgb(110,110,110)] max-w-sm" style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>Helping businesses attract, convert, and grow on autopilot.</p>
           </div>
         </div>
 

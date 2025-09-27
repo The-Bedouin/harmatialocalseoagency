@@ -56,7 +56,7 @@ export default function FooterBlurController() {
       strength={2}
       divCount={6}
       curve="bezier"
-      exponential={true}
+      exponential
       opacity={1}
       style={{ pointerEvents: "none" }}
     />

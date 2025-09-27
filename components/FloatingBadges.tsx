@@ -31,13 +31,13 @@ export default function FloatingBadges() {
 
   return (
     <div
-      className={`fixed bottom-16 right-0 z-50 flex flex-col items-end gap-3 transition-all duration-300 ${
-        isVisible ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-2 pointer-events-none"
-      }`}
+      className={`fixed bottom-16 right-0 z-50 flex flex-col items-end gap-3 transition-all duration-300 ${isVisible ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-2 pointer-events-none"
+        }`}
     >
       <a
         href="https://calendly.com/harmatia/30min"
         target="_blank"
+        rel="noreferrer"
         className="btn-green btn-green-lg rounded-2xl"
       >
         Book a call

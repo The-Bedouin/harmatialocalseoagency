@@ -103,7 +103,7 @@ export default function Footer() {
                     aria-label={s.label}
                     className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10 hover:bg-white/10 hover:ring-white/20 transition-all duration-200 hover:scale-[1.06] hover:rotate-[1.5deg] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
                   >
-                    <i className={`${s.icon} text-white/90`}></i>
+                    <i className={`${s.icon} text-white/90`} />
                   </a>
                 ))}
               </div>
@@ -144,7 +144,7 @@ export default function Footer() {
                 </div>
                 {submitted ? (
                   <div className="mt-1 inline-flex items-center gap-2 rounded-lg border border-emerald-400/20 bg-emerald-500/10 px-3 py-1 text-[11px] text-emerald-300">
-                    <i className="fa-solid fa-check" aria-hidden></i>
+                    <i className="fa-solid fa-check" aria-hidden />
                     Subscribed! Check your inbox.
                   </div>
                 ) : null}
