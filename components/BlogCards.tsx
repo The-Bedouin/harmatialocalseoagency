@@ -109,18 +109,20 @@ function CategoryAndMeta({ category, readTime }: { category: string; readTime: s
 
 function BlogCard({ post }: { post: BlogPost }) {
   return (
-    <div className="relative animate-float">
+    <article className="relative animate-float" itemScope itemType="https://schema.org/Article">
       <div className="absolute inset-0 bg-white rounded-2xl scale-[1.02] shadow-[0_8px_24px_-10px_rgba(0,0,0,0.18)] animate-shadow-float" />
 
       <Link
         href={post.href || "#"}
-        aria-label={post.title}
+        title={`Read: ${post.title}`}
+        aria-label={`Read article: ${post.title}`}
         className="group relative block rounded-2xl bg-white ring-1 ring-black/5 border border-white/40 overflow-hidden transition-all duration-500 ease-out hover:-translate-y-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={post.image}
           alt={post.title}
+          itemProp="image"
           className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
 
@@ -130,30 +132,32 @@ function BlogCard({ post }: { post: BlogPost }) {
           <h3
             className="mt-3 text-[18px] sm:text-[20px] font-medium leading-[1.2] tracking-tight text-neutral-900 transition-colors duration-300 group-hover:text-green-600"
             style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(28, 28, 28)' }}
+            itemProp="headline"
           >
             {post.title}
           </h3>
 
           <p className="mt-3 text-[14px] sm:text-[15px] leading-[1.5] text-neutral-600"
-            style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(110, 110, 110)' }}>
+            style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(110, 110, 110)' }}
+            itemProp="description">
             {post.excerpt}
           </p>
 
           <div className="mt-6 flex items-center justify-between text-[12px] text-neutral-600 font-sans">
-            <div>
+            <div itemProp="author" itemScope itemType="https://schema.org/Person">
               <div className="text-neutral-500">Written by</div>
-              <div className="text-neutral-900 font-semibold">{post.author}</div>
+              <div className="text-neutral-900 font-semibold" itemProp="name">{post.author}</div>
             </div>
             <div className="text-right">
               <div className="text-neutral-500">Posted on</div>
-              <div className="text-neutral-900 font-semibold">{post.date}</div>
+              <div className="text-neutral-900 font-semibold" itemProp="datePublished">{post.date}</div>
             </div>
           </div>
         </div>
 
         <div className="pointer-events-none absolute inset-0 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.4)] opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out" />
       </Link>
-    </div>
+    </article>
   );
 }
 

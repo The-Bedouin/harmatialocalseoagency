@@ -14,9 +14,9 @@ export default function StatementSection() {
             viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="text-neutral-900 font-medium tracking-tight text-[44px] leading-[46px]"
-            style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(28, 28, 28)'}}
+            style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(28, 28, 28)' }}
           >
-            I&apos;m so crazy for thinking I can pull this off.
+            SEO can transform your local business revenue.
           </motion.h2>
 
           {/* Right: paragraph + plus button */}
@@ -27,9 +27,9 @@ export default function StatementSection() {
               viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
               className="text-neutral-600 text-[18px] leading-[29px]"
-              style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(110, 110, 110)'}}
+              style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(110, 110, 110)' }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem id magna fermentum tincidunt. Sed sit amet lectus justo. Fusce vitae ullamcorper eros. Integer non justo id risus bibendum feugiat vitae a nunc.
+              Our proven local SEO strategies have helped businesses increase their online visibility by 300%, drive more qualified leads, and boost revenue through targeted Google Business Profile optimization and local search marketing.
             </motion.p>
 
             <motion.div

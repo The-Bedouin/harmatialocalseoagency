@@ -109,7 +109,7 @@ export default function Mission() {
           </div>
           <div className="lg:col-span-5">
             <p className="text-[18px] leading-[29px] font-normal text-[rgb(110,110,110)] max-w-sm" style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>
-              We promise to deliver beyond your expeCtations for your business.
+              We deliver beyond expeCtations for your business.
             </p>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function Mission() {
               <AvatarGroup />
             </LightCard>
             <div className="rounded-2xl border border-black/10 bg-white p-6 shadow-[0_18px_30px_-8px_rgba(0,0,0,0.28)] h-full min-h-[180px] flex flex-col justify-between">
-              <p className="text-neutral-600">Earn back on your investment within 30 days</p>
+              <p className="text-neutral-600">Earn back on your investment within 60 days</p>
               <div className="flex items-end gap-2">
                 <span className="text-[56px] leading-none font-medium text-neutral-900">90</span>
                 <span className="pb-2 text-2xl text-neutral-500">%</span>
@@ -145,7 +145,7 @@ export default function Mission() {
             <div className="rounded-2xl border border-black/10 bg-white p-6 shadow-[0_18px_30px_-8px_rgba(0,0,0,0.28)] h-full min-h-[255px] flex flex-col justify-between">
               <p className="text-neutral-600">Through our custom-tailored funnel systems</p>
               <div className="flex items-end gap-2">
-                <span className="text-[56px] leading-none font-medium text-neutral-900">$2.5</span>
+                <span className="text-[56px] leading-none font-medium text-neutral-900">$200k+</span>
                 <span className="pb-2 text-2xl text-neutral-500">+</span>
               </div>
               <p className="text-sm text-neutral-500">Revenue generated</p>

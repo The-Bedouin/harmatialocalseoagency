@@ -6,12 +6,12 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   const navLinks = [
-    { label: "About", href: "/about" },
-    { label: "Services", href: "/#services" },
-    { label: "Portfolio", href: "/#projects" },
-    { label: "Testimonials", href: "#" },
-    { label: "Faq", href: "#" },
-    { label: "Contact", href: "/contact" },
+    { label: "About Our SEO Agency", href: "/about", title: "About Harmatia Local SEO Agency" },
+    { label: "Local SEO Services", href: "/#services", title: "Local SEO Services and Google Business Profile Optimization" },
+    { label: "SEO Case Studies", href: "/#projects", title: "Local SEO Case Studies and Results" },
+    { label: "Local SEO Blog", href: "/blog-home", title: "Local SEO Tips and Strategies Blog" },
+    { label: "Contact SEO Experts", href: "/contact", title: "Contact Local SEO Specialists" },
+    { label: "What is Local SEO?", href: "/what-is-local-seo", title: "Complete Guide to Local SEO" },
   ];
 
   const socials = [
@@ -65,7 +65,7 @@ export default function Footer() {
                   ⚜
                 </span>
               </span>
-              <span className="text-base font-semibold tracking-tight">HarmatiaLocal-SEOAgency</span>
+              <span className="text-base font-semibold tracking-tight">Harmatia Local-SEO Agency</span>
             </Link>
             <p className="text-white/70 max-w-md text-xs">
               We help local businesses grow with high-performing SEO and conversion-focused design. Real results, delivered with craft.
@@ -80,6 +80,7 @@ export default function Footer() {
                 <li key={l.label}>
                   <Link
                     href={l.href}
+                    title={l.title}
                     className="relative inline-block text-white/80 hover:text-white transition-colors transition-transform hover:translate-y-[1px] pl-0 after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-0 after:bg-white/80 after:shadow-[0_0_12px_rgba(255,255,255,0.35)] after:transition-all hover:after:w-full before:content-[''] before:absolute before:-left-3 before:top-1/2 before:-translate-y-1/2 before:h-1 before:w-1 before:rounded-full before:bg-emerald-400 before:scale-0 before:transition-transform hover:before:scale-100"
                   >
                     {l.label}

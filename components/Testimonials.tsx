@@ -71,19 +71,19 @@ function QuoteCard({ item }: { item: Testimonial }) {
         <div className="pointer-events-none absolute -bottom-12 -left-12 h-32 w-32 rounded-full bg-blue-500/10 blur-2xl" />
 
         <div className="text-5xl leading-none text-emerald-100 mb-4 font-serif">&quot;</div>
-        <p className="text-[17px] sm:text-[18px] leading-[28px] text-neutral-800 mb-6" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>{item.quote}</p>
+        <p className="text-[17px] sm:text-[18px] leading-[28px] text-neutral-800 mb-6" style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>{item.quote}</p>
 
         <div className="flex items-center justify-between pt-5 border-t border-neutral-100">
           <div>
-            <div className="text-[16px] font-semibold text-neutral-900" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>{item.name}</div>
+            <div className="text-[16px] font-semibold text-neutral-900" style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>{item.name}</div>
             <div className="text-[14px] text-neutral-500 mt-1">{item.title}</div>
           </div>
           <div className="flex items-center gap-1 text-emerald-500">
-            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+            <svg className="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
           </div>
         </div>
       </div>
@@ -112,6 +112,35 @@ export default function Testimonials() {
   const [index, setIndex] = useState(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Review Schema for SEO
+  const reviewSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Harmatia Local SEO Agency",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": TESTIMONIALS.length,
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": TESTIMONIALS.map((testimonial, index) => ({
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "author": {
+        "@type": "Person",
+        "name": testimonial.name
+      },
+      "reviewBody": testimonial.quote,
+      "datePublished": "2024-12-15"
+    }))
+  };
+
   const visible = useMemo(() => {
     // Show 3 at a time like the reference
     const start = index % TESTIMONIALS.length;
@@ -130,41 +159,48 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="relative py-20">
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          <div className="lg:col-span-7">
-            <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1 text-[10px] uppercase tracking-wide text-neutral-600">
-              testimonials
+    <>
+      {/* Review Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <section className="relative py-20">
+        <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div className="lg:col-span-7">
+              <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1 text-[10px] uppercase tracking-wide text-neutral-600">
+                testimonials
+              </div>
+              <h2 className="mt-4 text-[44px] leading-[46px] font-medium text-[rgb(110,110,110)]" style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>40+ partners</h2>
+              <h3 className="text-[56px] leading-[58px] font-medium text-[rgb(28,28,28)]" style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>One outcome: Growth</h3>
             </div>
-            <h2 className="mt-4 text-[44px] leading-[46px] font-medium text-[rgb(110,110,110)]" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>40+ partners</h2>
-            <h3 className="text-[56px] leading-[58px] font-medium text-[rgb(28,28,28)]" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>One outcome: Growth</h3>
+            <div className="lg:col-span-5">
+              <p className="text-[18px] leading-[29px] font-normal text-[rgb(110,110,110)] max-w-sm" style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}>
+                Real stories from real businesses who scaled with our funnel systems.
+              </p>
+            </div>
           </div>
-          <div className="lg:col-span-5">
-            <p className="text-[18px] leading-[29px] font-normal text-[rgb(110,110,110)] max-w-sm" style={{fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif'}}>
-              Real stories from real businesses who scaled with our funnel systems.
-            </p>
-          </div>
-        </div>
 
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5 overflow-hidden">
-          <AnimatePresence initial={false}>
-            {visible.map((t, i) => (
-              <AnimatedPresenceItem key={`${index}-${i}-${t.name}`}>
-                <QuoteCard item={t} />
-              </AnimatedPresenceItem>
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5 overflow-hidden">
+            <AnimatePresence initial={false}>
+              {visible.map((t, i) => (
+                <AnimatedPresenceItem key={`${index}-${i}-${t.name}`}>
+                  <QuoteCard item={t} />
+                </AnimatedPresenceItem>
+              ))}
+            </AnimatePresence>
+          </div>
+
+          <div className="mt-6 flex justify-center">
+            {TESTIMONIALS.slice(0, 6).map((_, i) => (
+              <Dot key={i} active={index % TESTIMONIALS.length === i} onClick={() => setIndex(i)} />
             ))}
-          </AnimatePresence>
-        </div>
+          </div>
 
-        <div className="mt-6 flex justify-center">
-          {TESTIMONIALS.slice(0, 6).map((_, i) => (
-            <Dot key={i} active={index % TESTIMONIALS.length === i} onClick={() => setIndex(i)} />
-          ))}
         </div>
-
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 

@@ -53,7 +53,7 @@ export default function Hero() {
               </span>
               your business
               <br />
-              with <TrueFocus 
+              with <TrueFocus
                 sentence="Local SEO"
                 manualMode={false}
                 blurAmount={5}
@@ -72,36 +72,37 @@ export default function Hero() {
                 href="https://calendly.com/harmatia/30min"
                 target="_blank"
                 className="px-6 py-3 rounded-2xl text-white bg-black shadow-[0_20px_40px_rgba(0,0,0,0.25)] transition-colors"
-                whileHover={{ 
+                whileHover={{
                   scale: 1.05,
                   boxShadow: "0 25px 50px rgba(0,0,0,0.35)",
                   backgroundColor: "#1a1a1a"
                 }}
                 whileTap={{ scale: 0.98 }}
-                transition={{ 
-                  type: "spring", 
-                  stiffness: 400, 
-                  damping: 17 
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 17
                 }}
               >
                 Drive results now
               </motion.a>
               <motion.a
                 href="/about"
+                title="About Harmatia Local SEO Agency - Learn More About Our Team"
                 className="px-6 py-3 rounded-2xl border border-black/10 bg-white text-neutral-900 transition-colors"
-                whileHover={{ 
+                whileHover={{
                   scale: 1.05,
                   backgroundColor: "#f8f9fa",
                   borderColor: "rgba(0,0,0,0.2)"
                 }}
                 whileTap={{ scale: 0.98 }}
-                transition={{ 
-                  type: "spring", 
-                  stiffness: 400, 
-                  damping: 17 
+                transition={{
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 17
                 }}
               >
-                Learn more
+                About Our Local SEO Agency
               </motion.a>
             </div>
 
@@ -140,8 +141,8 @@ export default function Hero() {
             >
               <Card className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
                 <div className="relative h-full">
-                  <Image 
-                    src="/gbp-map-pack.png" 
+                  <Image
+                    src="/gbp-map-pack.png"
                     alt="Google Business Profile map pack results"
                     className="w-full h-full object-cover"
                     fill
@@ -155,8 +156,8 @@ export default function Hero() {
               </Card>
               <Card className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
                 <div className="relative h-full">
-                  <Image 
-                    src="/ccb-targeted-web-traffic.png" 
+                  <Image
+                    src="/ccb-targeted-web-traffic.png"
                     alt="Targeted web traffic analytics dashboard"
                     className="w-full h-full object-cover"
                     fill
@@ -170,8 +171,8 @@ export default function Hero() {
               </Card>
               <Card className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
                 <div className="relative h-full">
-                  <Image 
-                    src="/local-citation.png" 
+                  <Image
+                    src="/local-citation.png"
                     alt="Local citation distribution and management"
                     className="w-full h-full object-cover"
                     fill
@@ -185,8 +186,8 @@ export default function Hero() {
               </Card>
               <Card className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
                 <div className="relative h-full">
-                  <Image 
-                    src="/los-angeles-map-pack.png" 
+                  <Image
+                    src="/los-angeles-map-pack.png"
                     alt="Los Angeles market coverage across multiple neighborhoods"
                     className="w-full h-full object-cover"
                     fill
@@ -206,8 +207,8 @@ export default function Hero() {
             <ScrollStack>
               <ScrollStackItem>
                 <div className="relative w-full h-full rounded-lg overflow-hidden bg-neutral-900">
-                  <Image 
-                    src="/gbp-map-pack.png" 
+                  <Image
+                    src="/gbp-map-pack.png"
                     alt="Google Business Profile map pack results"
                     className="w-full h-full object-cover object-left md:object-cover md:object-center"
                     fill
@@ -221,8 +222,8 @@ export default function Hero() {
               </ScrollStackItem>
               <ScrollStackItem>
                 <div className="relative w-full h-full rounded-lg overflow-hidden bg-neutral-900">
-                  <Image 
-                    src="/ccb-targeted-web-traffic.png" 
+                  <Image
+                    src="/ccb-targeted-web-traffic.png"
                     alt="Targeted web traffic analytics dashboard"
                     className="w-full h-full object-cover object-left md:object-cover md:object-center"
                     fill
@@ -236,8 +237,8 @@ export default function Hero() {
               </ScrollStackItem>
               <ScrollStackItem>
                 <div className="relative w-full h-full rounded-lg overflow-hidden bg-neutral-900">
-                  <Image 
-                    src="/local-citation.png" 
+                  <Image
+                    src="/local-citation.png"
                     alt="Local citation distribution and management"
                     className="w-full h-full object-cover object-left md:object-cover md:object-center"
                     fill
@@ -251,8 +252,8 @@ export default function Hero() {
               </ScrollStackItem>
               <ScrollStackItem>
                 <div className="relative w-full h-full rounded-lg overflow-hidden bg-neutral-900">
-                  <Image 
-                    src="/los-angeles-map-pack.png" 
+                  <Image
+                    src="/los-angeles-map-pack.png"
                     alt="Los Angeles market coverage across multiple neighborhoods"
                     className="w-full h-full object-contain md:object-cover"
                     fill

@@ -1,0 +1,12 @@
+<svg viewBox="0 0 56 56" width="56" height="56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .logo-bg { fill: #1F1F1F; }
+      .logo-line { stroke: #ffffff; stroke-width: 3.25; stroke-linecap: round; stroke-linejoin: round; }
+      .logo-symbol { fill: #D4AF37; font-size: 5px; transform: rotate(45deg); transform-origin: 50% 70%; }
+    </style>
+  </defs>
+  <rect class="logo-bg" width="56" height="56" rx="8"/>
+  <path class="logo-line" d="M8 40 L20 28 L24 32 L34 22 L38 26 L46 16"/>
+  <text class="logo-symbol" x="28" y="35" text-anchor="middle" dominant-baseline="middle">⚜</text>
+</svg>

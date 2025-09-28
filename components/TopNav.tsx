@@ -32,16 +32,20 @@ export default function TopNav() {
   }, []);
 
   const navItems = [
-    { name: "Home", href: "/" },
-    { name: "Services", href: "/#services" },
-    { name: "Resources", href: "#", hasDropdown: true },
-    { name: "Portfolio", href: "/#projects" },
-    { name: "Contact", href: "/contact" },
-    { name: "About", href: "/about" },
+    { name: "Home", href: "/", title: "Harmatia Local SEO Agency - Home" },
+    { name: "Local SEO Services", href: "/#services", title: "Local SEO Services - Google Business Profile Optimization" },
+    { name: "SEO Resources", href: "#", hasDropdown: true, title: "Local SEO Resources and Guides" },
+    { name: "Portfolio", href: "/#projects", title: "Local SEO Case Studies and Results" },
+    { name: "Contact Us", href: "/contact", title: "Contact Local SEO Experts" },
+    { name: "About Us", href: "/about", title: "About Harmatia Local SEO Agency" },
   ];
 
   const resourcesItems = [
-    { name: "Blog", href: "/blog-home" },
+    { name: "Local SEO Blog", href: "/blog-home", title: "Local SEO Tips and Strategies Blog" },
+    { name: "What is Local SEO?", href: "/what-is-local-seo", title: "Complete Guide to Local SEO" },
+    { name: "Google Business Profile Guide", href: "/how-to-optimize-google-business-profile", title: "How to Optimize Google Business Profile" },
+    { name: "Local SEO Strategies", href: "/local-seo-strategies-for-small-businesses", title: "Local SEO Strategies for Small Businesses" },
+    { name: "Local SEO Audit Guide", href: "/common-mistakes-local-seo-audits", title: "Common Local SEO Audit Mistakes" },
   ];
 
   return (
@@ -69,7 +73,7 @@ export default function TopNav() {
               ⚜
             </span>
           </span>
-          <span className="tracking-tight">HarmatiaLocal-SEOAgency</span>
+          <span className="tracking-tight">Harmatia Local-SEO Agency</span>
         </Link>
 
         {/* Desktop nav */}
@@ -102,6 +106,7 @@ export default function TopNav() {
                           <Link
                             key={resourceItem.name}
                             href={resourceItem.href}
+                            title={resourceItem.title}
                             className="group flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-neutral-700 hover:text-neutral-900 hover:bg-gradient-to-r hover:from-neutral-50 hover:to-white rounded-lg transition-all duration-200"
                           >
                             <svg className="w-4 h-4 text-neutral-400 group-hover:text-neutral-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -116,6 +121,7 @@ export default function TopNav() {
                 ) : (
                   <Link
                     href={item.href}
+                    title={item.title}
                     className="relative text-neutral-700 hover:text-neutral-900 transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-neutral-900 after:transition-all hover:after:w-full"
                   >
                     {item.name}
@@ -212,6 +218,7 @@ export default function TopNav() {
                           <Link
                             key={resourceItem.name}
                             href={resourceItem.href}
+                            title={resourceItem.title}
                             onClick={() => {
                               setIsOpen(false);
                               setIsResourcesOpen(false);
@@ -230,6 +237,7 @@ export default function TopNav() {
                 ) : (
                   <Link
                     href={item.href}
+                    title={item.title}
                     onClick={() => setIsOpen(false)}
                     className="py-2 text-sm text-neutral-800 hover:text-neutral-900 transition-colors"
                   >

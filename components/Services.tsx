@@ -213,6 +213,37 @@ export default function Services() {
   // Start collapsed so bounce cards are hidden by default
   const [active, setActive] = useState<number>(-1);
 
+  // Service Schema for SEO
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Local SEO Services",
+    "description": "Professional local SEO services to help businesses dominate local search results and attract more customers.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Harmatia Local SEO Agency",
+      "url": "https://harmatialocalseoagency.com"
+    },
+    "serviceType": "Local SEO Services",
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Local SEO Services",
+      "itemListElement": SERVICES.map((service, index) => ({
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": service.title,
+          "description": service.blurb
+        },
+        "position": index + 1
+      }))
+    }
+  };
+
   const images = [
     "https://picsum.photos/400/400?grayscale",
     "https://picsum.photos/500/500?grayscale",
@@ -257,64 +288,71 @@ export default function Services() {
   const perRowTransforms = SERVICES.map((_, i) => transformStyles.map((t) => shiftTranslateX(t, (i - 1) * 20)));
 
   return (
-    <section id="services" className="relative text-white py-16 sm:py-20 lg:py-24 overflow-hidden" style={{ backgroundColor: '#1F1F1F' }}>
-      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          <div className="lg:col-span-7">
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] uppercase tracking-wide text-neutral-300">
-              services
-            </div>
-            <h2
-              className="mt-4 text-[44px] leading-[46px] font-medium"
-              style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(110, 110, 110)' }}
-            >
-              How can we help
-            </h2>
-            <h3
-              className="text-[44px] leading-[46px] font-medium"
-              style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(255, 255, 255)' }}
-            >
-              Your business grow
-            </h3>
-          </div>
-          <div className="lg:col-span-5">
-            <p
-              className="text-[18px] leading-[29px] font-normal text-neutral-300 max-w-sm"
-              style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}
-            >
-              Achieving goals for businesses and entrepreneurs around the globe.
-            </p>
-          </div>
-        </div>
-
-        <div className="mt-8 sm:mt-10">
-          <div className="h-px w-full bg-white/10" />
-          {SERVICES.map((item, i) => (
-            <ServiceRow
-              key={item.id}
-              item={item}
-              index={i}
-              isActive={active === i}
-              onToggle={() => setActive(active === i ? -1 : i)}
-              images={perRowImages[i]}
-              transformStyles={perRowTransforms[i]}
-            />
-          ))}
-        </div>
-      </div>
-
-      {/* Bottom fade using GradualBlur */}
-      <GradualBlur
-        target="parent"
-        position="bottom"
-        height="6rem"
-        strength={2}
-        divCount={5}
-        curve="bezier"
-        exponential
-        opacity={1}
+    <>
+      {/* Service Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
-    </section>
+      <section id="services" className="relative text-white py-16 sm:py-20 lg:py-24 overflow-hidden" style={{ backgroundColor: '#1F1F1F' }}>
+        <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <div className="lg:col-span-7">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] uppercase tracking-wide text-neutral-300">
+                services
+              </div>
+              <h2
+                className="mt-4 text-[44px] leading-[46px] font-medium"
+                style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(110, 110, 110)' }}
+              >
+                How can we help
+              </h2>
+              <h3
+                className="text-[44px] leading-[46px] font-medium"
+                style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif', color: 'rgb(255, 255, 255)' }}
+              >
+                Your business grow
+              </h3>
+            </div>
+            <div className="lg:col-span-5">
+              <p
+                className="text-[18px] leading-[29px] font-normal text-neutral-300 max-w-sm"
+                style={{ fontFamily: '"Open Runde", "Open Runde Placeholder", sans-serif' }}
+              >
+                Achieving goals for businesses and entrepreneurs around the globe.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 sm:mt-10">
+            <div className="h-px w-full bg-white/10" />
+            {SERVICES.map((item, i) => (
+              <ServiceRow
+                key={item.id}
+                item={item}
+                index={i}
+                isActive={active === i}
+                onToggle={() => setActive(active === i ? -1 : i)}
+                images={perRowImages[i]}
+                transformStyles={perRowTransforms[i]}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom fade using GradualBlur */}
+        <GradualBlur
+          target="parent"
+          position="bottom"
+          height="6rem"
+          strength={2}
+          divCount={5}
+          curve="bezier"
+          exponential
+          opacity={1}
+        />
+      </section>
+    </>
   );
 }
 
